@@ -1,0 +1,301 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="aec09459-cc3e-4e4c-96b1-4058739e40bd" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>OAnggaran</ID>
+  <Name>OAnggaran</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout>
+              <dds>
+                <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="10" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-7123" scrolltop="-294" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="98" x="29501" y="14102" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+                  <font>
+                    <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+                  </font>
+                  <mouseicon>
+                    <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+                  </mouseicon>
+                </diagram>
+                <layoutmanager>
+                  <ddsxmlobj />
+                </layoutmanager>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="fakta_anggaran" left="5860" top="4702" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3625" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000a0000290e000088130000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_fakta_anggaran" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="dim_pendapatan" left="20" top="5416" logicalid="2" controlid="2" masterid="0" hint1="0" hint2="0" width="3440" height="3572" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000a0000700d0000f40d0000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_dim_pendapatan" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="dim_bidang" left="6085" top="0" logicalid="3" controlid="3" masterid="0" hint1="0" hint2="0" width="3175" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000a0000670c0000fe080000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_dim_bidang" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="dim_pembiayaan" left="11885" top="6051" logicalid="4" controlid="4" masterid="0" hint1="0" hint2="0" width="3493" height="2302" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000a0000a50d0000fe080000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_dim_pembiayaan" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="dim_waktu" left="43" top="1087" logicalid="5" controlid="5" masterid="0" hint1="0" hint2="0" width="3000" height="1879" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobjectstreaminitwrapper binary="000a0000b80b000057070000" />
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dbo_dim_waktu" vartype="8" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <shape groupshapeid="0" groupnode="0" />
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="7273" top="1803" logicalid="6" controlid="6" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FK_fakta_anggaran_dim_bidang]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="3" destid="1" sourceattachpoint="5" destattachpoint="6" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="7672" y="2302" />
+                    <point x="7672" y="4702" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="3160" top="6803" logicalid="7" controlid="7" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FK_fakta_anggaran_dim_pendapatan]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="1" sourceattachpoint="17" destattachpoint="22" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="3460" y="7202" />
+                    <point x="5860" y="7202" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="9185" top="6803" logicalid="8" controlid="8" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FK_fakta_anggaran_dim_pembiayaan]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="1" sourceattachpoint="12" destattachpoint="23" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="11885" y="7202" />
+                    <point x="9485" y="7202" />
+                  </connector>
+                </ddscontrol>
+                <ddscontrol controlprogid="MSDDS.Polyline" left="2743" top="2177" logicalid="9" controlid="9" masterid="0" hint1="0" hint2="0" width="3417" height="3125" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+                  <control>
+                    <ddsxmlobj>
+                      <polyline endtypedst="6" endtypesrc="3" usercolor="1973790" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+                    </ddsxmlobj>
+                  </control>
+                  <layoutobject>
+                    <ddsxmlobj>
+                      <property name="LogicalObject" value="dataSet.Relations[FK_fakta_anggaran_dim_waktu]" vartype="8" />
+                      <property name="Virtual" value="0" vartype="11" />
+                      <property name="VisibleAP" value="0" vartype="3" />
+                    </ddsxmlobj>
+                  </layoutobject>
+                  <connector lineroutestyle="MSDDS.Rectilinear" sourceid="5" destid="1" sourceattachpoint="15" destattachpoint="14" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+                    <point x="3043" y="2576" />
+                    <point x="4451" y="2576" />
+                    <point x="4451" y="5002" />
+                    <point x="5860" y="5002" />
+                  </connector>
+                </ddscontrol>
+              </dds>
+</DiagramLayout>
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>-7123</DiagramViewPortLeft>
+            <DiagramViewPortTop>-294</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>98</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>BAPPEDADW</DataSourceID>
+  <Schema>
+    <xs:schema id="OAnggaran" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="OAnggaran" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="bd655c0e-230a-402c-a45b-08df1381eb28">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_fakta_anggaran" msprop:design-time-name="46a24730-6889-425d-91ad-ea4c0c3fe10f" msprop:FriendlyName="fakta_anggaran" msprop:DbSchemaName="dbo" msprop:DbTableName="fakta_anggaran" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="fang_tahun" msprop:design-time-name="b6cb6ca2-2347-41b6-82ad-b5867f049936" msprop:DbColumnName="fang_tahun" msprop:FriendlyName="fang_tahun" type="xs:int" />
+                  <xs:element name="fang_kd_bidang" msprop:design-time-name="c398e2be-86a9-49e6-81d6-4a90ce74e6e2" msprop:DbColumnName="fang_kd_bidang" msprop:FriendlyName="fang_kd_bidang" type="xs:int" />
+                  <xs:element name="fang_pend_id" msprop:design-time-name="6b69ffbe-5c15-4ab0-b74d-c54c56efe569" msprop:DbColumnName="fang_pend_id" msprop:FriendlyName="fang_pend_id" type="xs:int" />
+                  <xs:element name="fang_pend_satuan" msprop:design-time-name="28ed9921-78fe-445c-8127-4e9c24af9a4c" msprop:DbColumnName="fang_pend_satuan" msprop:FriendlyName="fang_pend_satuan" type="xs:decimal" />
+                  <xs:element name="fang_pend_nilai" msprop:design-time-name="da02067b-bae9-473a-b912-5359b4d3494b" msprop:DbColumnName="fang_pend_nilai" msprop:FriendlyName="fang_pend_nilai" type="xs:decimal" />
+                  <xs:element name="fang_pend_total" msprop:design-time-name="e2cf3969-f61e-4d1a-97d8-188208ce3e99" msprop:DbColumnName="fang_pend_total" msprop:FriendlyName="fang_pend_total" type="xs:decimal" />
+                  <xs:element name="fang_pemb_id" msprop:design-time-name="7f11a1bd-9e2f-4ccb-9b22-6e995507156d" msprop:DbColumnName="fang_pemb_id" msprop:FriendlyName="fang_pemb_id" type="xs:int" />
+                  <xs:element name="fang_nilai" msprop:design-time-name="d51e5c07-bb66-4676-9858-998a237408ba" msprop:DbColumnName="fang_nilai" msprop:FriendlyName="fang_nilai" type="xs:decimal" />
+                  <xs:element name="fang_pemb_satuan" msprop:design-time-name="25cf399d-487e-4223-8017-f1205f650ed8" msprop:DbColumnName="fang_pemb_satuan" msprop:FriendlyName="fang_pemb_satuan" type="xs:decimal" />
+                  <xs:element name="fang_pemb_total" msprop:design-time-name="fda7b7a5-73d7-481b-9573-4de8a85c5983" msprop:DbColumnName="fang_pemb_total" msprop:FriendlyName="fang_pemb_total" type="xs:decimal" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_dim_pendapatan" msprop:design-time-name="da8e2763-875e-4f25-85ca-545abefe023d" msprop:FriendlyName="dim_pendapatan" msprop:DbSchemaName="dbo" msprop:DbTableName="dim_pendapatan" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="pend_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="f8ed5bd4-19cb-41a1-9ea3-beb071d53297" msprop:DbColumnName="pend_id" msprop:FriendlyName="pend_id" type="xs:int" />
+                  <xs:element name="pend_kd_bidang" msprop:design-time-name="ea71cfe2-7cd4-4732-9649-3fd85631427f" msprop:DbColumnName="pend_kd_bidang" msprop:FriendlyName="pend_kd_bidang" type="xs:unsignedByte" />
+                  <xs:element name="pend_kd_unit" msprop:design-time-name="1523127c-21af-4edf-adce-021e6cf88b5d" msprop:DbColumnName="pend_kd_unit" msprop:FriendlyName="pend_kd_unit" type="xs:unsignedByte" />
+                  <xs:element name="pend_keterangan" msprop:design-time-name="883db9da-d67c-4e6c-8b6c-3474b6259137" msprop:DbColumnName="pend_keterangan" msprop:FriendlyName="pend_keterangan" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="pend_satuan" msprop:design-time-name="5f9cd64d-0f54-4940-8cac-e5b16a1421fe" msprop:DbColumnName="pend_satuan" msprop:FriendlyName="pend_satuan" type="xs:decimal" />
+                  <xs:element name="pend_nilai" msprop:design-time-name="26c0d8e7-500c-4db6-a67a-68a5bca03e5e" msprop:DbColumnName="pend_nilai" msprop:FriendlyName="pend_nilai" type="xs:decimal" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_dim_bidang" msprop:design-time-name="40cd1af2-5f16-4bcc-9852-320a0fc2e5f8" msprop:FriendlyName="dim_bidang" msprop:DbSchemaName="dbo" msprop:DbTableName="dim_bidang" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="bid_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="17df6da8-c334-4785-94ee-1a35e8253b4a" msprop:DbColumnName="bid_id" msprop:FriendlyName="bid_id" type="xs:int" />
+                  <xs:element name="bid_kd_bidang" msprop:design-time-name="1b70c261-a6a7-42f9-bf01-29bb4233376c" msprop:DbColumnName="bid_kd_bidang" msprop:FriendlyName="bid_kd_bidang" type="xs:unsignedByte" />
+                  <xs:element name="bid_keterangan" msprop:design-time-name="e8e6e695-94aa-4ffb-991c-f40606b4f75d" msprop:DbColumnName="bid_keterangan" msprop:FriendlyName="bid_keterangan">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_dim_pembiayaan" msprop:design-time-name="50c6119e-829d-46a3-a9d1-0d80a6e9a8a0" msprop:FriendlyName="dim_pembiayaan" msprop:DbSchemaName="dbo" msprop:DbTableName="dim_pembiayaan" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="pemb_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="a498a08c-bd1f-4e9c-954c-9ef873bfb093" msprop:DbColumnName="pemb_id" msprop:FriendlyName="pemb_id" type="xs:int" />
+                  <xs:element name="pemb_kd_bidang" msprop:design-time-name="2acd4dd8-f05b-4f37-b9a3-a4219f0e5634" msprop:DbColumnName="pemb_kd_bidang" msprop:FriendlyName="pemb_kd_bidang" type="xs:unsignedByte" />
+                  <xs:element name="pemb_keterangan" msprop:design-time-name="48883f18-66e6-4bcb-98ca-0c1013866d10" msprop:DbColumnName="pemb_keterangan" msprop:FriendlyName="pemb_keterangan" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_dim_waktu" msprop:design-time-name="ef5d9ae2-0bcc-45bf-af37-20442d224bd8" msprop:FriendlyName="dim_waktu" msprop:DbSchemaName="dbo" msprop:DbTableName="dim_waktu" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="wkt_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="05f7daaa-0ba9-4d2d-9ad6-cf75b1e024f3" msprop:DbColumnName="wkt_id" msprop:FriendlyName="wkt_id" type="xs:int" />
+                  <xs:element name="wkt_detail" msprop:design-time-name="2375e62d-e922-4629-b7e2-12a64166b4bd" msprop:DbColumnName="wkt_detail" msprop:FriendlyName="wkt_detail" type="xs:short" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_dim_pendapatan" />
+          <xs:field xpath="pend_id" />
+        </xs:unique>
+        <xs:unique name="dbo_dim_bidang_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_dim_bidang" />
+          <xs:field xpath="bid_id" />
+        </xs:unique>
+        <xs:unique name="dbo_dim_pembiayaan_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_dim_pembiayaan" />
+          <xs:field xpath="pemb_id" />
+        </xs:unique>
+        <xs:unique name="dbo_dim_waktu_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_dim_waktu" />
+          <xs:field xpath="wkt_id" />
+        </xs:unique>
+        <xs:keyref name="FK_fakta_anggaran_dim_waktu" refer="dbo_dim_waktu_Constraint1">
+          <xs:selector xpath=".//dbo_fakta_anggaran" />
+          <xs:field xpath="fang_tahun" />
+        </xs:keyref>
+        <xs:keyref name="FK_fakta_anggaran_dim_pembiayaan" refer="dbo_dim_pembiayaan_Constraint1">
+          <xs:selector xpath=".//dbo_fakta_anggaran" />
+          <xs:field xpath="fang_pemb_id" />
+        </xs:keyref>
+        <xs:keyref name="FK_fakta_anggaran_dim_pendapatan" refer="Constraint1">
+          <xs:selector xpath=".//dbo_fakta_anggaran" />
+          <xs:field xpath="fang_pend_id" />
+        </xs:keyref>
+        <xs:keyref name="FK_fakta_anggaran_dim_bidang" refer="dbo_dim_bidang_Constraint1">
+          <xs:selector xpath=".//dbo_fakta_anggaran" />
+          <xs:field xpath="fang_kd_bidang" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <OAnggaran xmlns="" />
+  </Schema>
+</DataSourceView>

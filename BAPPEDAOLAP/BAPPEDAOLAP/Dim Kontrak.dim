@@ -1,0 +1,265 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="dc235055-37cc-4546-814c-a48c50c8943e" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Kontrak</ID>
+  <Name>Dim Kontrak</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3552" scrolltop="-4180" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10213" y="12779" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="dim_kontrak" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3069" height="4419" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a0000fd0b000043110000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_dim_kontrak" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-3552</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-4180</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="e67ac891-c219-4012-aed9-a15542f953b5">
+    <DataSourceViewID>OKerjasama</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="56040619-bbfc-4e2b-a421-6d9a0f663fd5">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="00e3673b-1f38-4360-a2f5-127223d8f979">
+      <ID>Kont Id</ID>
+      <Name>Kont Id</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e92a145a-ca67-4ad5-a177-b82025887695">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8036ae49-d2eb-43ed-853c-84909e5a23c9">
+            <TableID>dbo_dim_kontrak</TableID>
+            <ColumnID>kont_id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="b019ab6b-78cb-4a68-8f08-c798b9bc4454">
+          <AttributeID>Kont Spp</AttributeID>
+          <Name>Kont Spp</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="928a4daa-95f9-4b0c-8113-a68990d7d187">
+          <AttributeID>Kont Nama</AttributeID>
+          <Name>Kont Nama</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e6f53c8d-ebae-4dc6-a3b1-1aa095fa8dfe">
+          <AttributeID>Kont Bentuk</AttributeID>
+          <Name>Kont Bentuk</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="877caba8-9606-45b3-9b15-e44535bde30a">
+          <AttributeID>Kont Alamat</AttributeID>
+          <Name>Kont Alamat</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="afac9d23-87fc-4bd9-bed9-779bb4b1037e">
+          <AttributeID>Kont Keperlian</AttributeID>
+          <Name>Kont Keperlian</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f49f73bf-b4c1-42b6-949a-96a8c445451a">
+          <AttributeID>Kont Nomor</AttributeID>
+          <Name>Kont Nomor</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="868cde9b-6cec-4584-ab82-8e097a63f4a8">
+      <ID>Kont Spp</ID>
+      <Name>Kont Spp</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="466a2afe-9985-4b9b-b981-54a3a7854423">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="35a5f256-efa2-464f-b8d0-52accb5f4805">
+            <TableID>dbo_dim_kontrak</TableID>
+            <ColumnID>kont_spp</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="0df8b48c-5036-4a1d-a66e-ed836724416b">
+      <ID>Kont Nama</ID>
+      <Name>Kont Nama</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="cdc73bf6-f56e-487d-bb85-9f7ebcb3cb0d">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3e516558-be7b-4d2e-b331-0be2d1bca5db">
+            <TableID>dbo_dim_kontrak</TableID>
+            <ColumnID>kont_nama</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ebf9f520-d327-4188-a1f4-4f93e03f7506">
+      <ID>Kont Bentuk</ID>
+      <Name>Kont Bentuk</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0e242d1e-72e5-4d41-af93-3910cbb12a04">
+          <DataType>WChar</DataType>
+          <DataSize>25</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4c1d31b9-e8a3-4057-a80d-2cb661dea4bc">
+            <TableID>dbo_dim_kontrak</TableID>
+            <ColumnID>kont_bentuk</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="1af5c90c-ef4e-40d0-91df-b9d1c2b6aa73">
+      <ID>Kont Alamat</ID>
+      <Name>Kont Alamat</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="5449d669-b1f4-4f1b-b8ef-a358ec26e801">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="62ca2628-323c-4064-8f9b-ce8882a52ad0">
+            <TableID>dbo_dim_kontrak</TableID>
+            <ColumnID>kont_alamat</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="38689ed8-6168-4ec5-9eda-092d088d2acf">
+      <ID>Kont Keperlian</ID>
+      <Name>Kont Keperlian</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="819b4464-daee-4c26-81b2-d6f7a2ce7d58">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="394dd3cd-8dbd-4dab-acaf-2a0b5d639cfe">
+            <TableID>dbo_dim_kontrak</TableID>
+            <ColumnID>kont_keperlian</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f7af958d-38fc-436b-8781-a96e51266a38">
+      <ID>Kont Nomor</ID>
+      <Name>Kont Nomor</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3c9702ed-9695-454b-b209-200ce50ee60b">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fec8f250-8b3a-4c53-bc26-8d9b12e4074f">
+            <TableID>dbo_dim_kontrak</TableID>
+            <ColumnID>kont_nomor</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="c3c6c6db-6675-4491-8a17-8d64d915f6a0">
+      <ID>Hierarchy</ID>
+      <Name>Hierarchy</Name>
+      <Levels>
+        <Level dwd:design-time-name="134677b0-59b1-4a3d-99b0-c736fd33f07f">
+          <ID>Kont Id</ID>
+          <Name>Kont Id</Name>
+          <SourceAttributeID>Kont Id</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="e2e4768f-cd30-444c-976e-8bf1aab948ac">
+          <ID>Kont Spp</ID>
+          <Name>Kont Spp</Name>
+          <SourceAttributeID>Kont Spp</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="58122b8f-5566-45e6-920b-fcd7d075a2fb">
+          <ID>Kont Nomor</ID>
+          <Name>Kont Nomor</Name>
+          <SourceAttributeID>Kont Nomor</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="de1a8551-cd22-48ef-a4ec-b4b651fcd9ba">
+          <ID>Kont Nama</ID>
+          <Name>Kont Nama</Name>
+          <SourceAttributeID>Kont Nama</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="5606fc0e-b42f-4e40-bcd2-24f8779ce5f5">
+          <ID>Kont Bentuk</ID>
+          <Name>Kont Bentuk</Name>
+          <SourceAttributeID>Kont Bentuk</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="c59dbe9b-83e4-47ee-b164-1a5ddbc336c0">
+          <ID>Kont Alamat</ID>
+          <Name>Kont Alamat</Name>
+          <SourceAttributeID>Kont Alamat</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="f3a89f8c-0a92-4a2b-8401-d758cf4504cc">
+          <ID>Kont Keperlian</ID>
+          <Name>Kont Keperlian</Name>
+          <SourceAttributeID>Kont Keperlian</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

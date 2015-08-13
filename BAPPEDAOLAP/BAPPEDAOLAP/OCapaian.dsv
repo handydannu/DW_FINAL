@@ -1,0 +1,112 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="a167711e-93f9-4b74-9783-772f16d0f5b5" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>OCapaian</ID>
+  <Name>OCapaian</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>BAPPEDADW</DataSourceID>
+  <Schema>
+    <xs:schema id="OCapaian" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="OCapaian" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="74dce5f8-29b3-42cf-9055-8ac3d529501e">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_fakta_capaian" msprop:design-time-name="8133bcb5-7b0a-40f5-ba0b-f603e9b2683a" msprop:DbTableName="fakta_capaian" msprop:FriendlyName="fakta_capaian" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="fcap_tahun" msprop:design-time-name="b73c40a5-4976-4c15-803b-6e3920c3990c" msprop:DbColumnName="fcap_tahun" msprop:FriendlyName="fcap_tahun" type="xs:int" />
+                  <xs:element name="fcap_id" msprop:design-time-name="84aec2a9-9ca7-45f3-a236-1edb8dafb1c7" msprop:DbColumnName="fcap_id" msprop:FriendlyName="fcap_id" type="xs:int" />
+                  <xs:element name="fcap_kd_bidang" msprop:design-time-name="75c2f916-d206-497e-81eb-3b18789f8e29" msprop:DbColumnName="fcap_kd_bidang" msprop:FriendlyName="fcap_kd_bidang" type="xs:unsignedByte" />
+                  <xs:element name="fcap_target" msprop:design-time-name="c305830a-b586-42e1-9185-022694338e9a" msprop:DbColumnName="fcap_target" msprop:FriendlyName="fcap_target" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="fcap_satuan" msprop:design-time-name="bb8a7fe1-5912-46c0-8909-836b2faa9540" msprop:DbColumnName="fcap_satuan" msprop:FriendlyName="fcap_satuan" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="fcap_kd_prog" msprop:design-time-name="3444be36-01f5-4a8e-b4b4-b0e26856bff4" msprop:DbColumnName="fcap_kd_prog" msprop:FriendlyName="fcap_kd_prog" type="xs:short" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_dim_capaian" msprop:design-time-name="765f3fb2-55f1-437a-90c9-6ea63e91b296" msprop:DbTableName="dim_capaian" msprop:FriendlyName="dim_capaian" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="cap_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="2e97f86d-f83b-4cb9-9830-d50ebc0feefe" msprop:DbColumnName="cap_id" msprop:FriendlyName="cap_id" type="xs:int" />
+                  <xs:element name="cap_kd_bidang" msprop:design-time-name="26ae423c-b93b-4712-87f0-f7a0b917a644" msprop:DbColumnName="cap_kd_bidang" msprop:FriendlyName="cap_kd_bidang" type="xs:unsignedByte" />
+                  <xs:element name="cap_kd_prog" msprop:design-time-name="5984316b-9bc6-422c-9271-e5a2eb6cd959" msprop:DbColumnName="cap_kd_prog" msprop:FriendlyName="cap_kd_prog" type="xs:short" />
+                  <xs:element name="cap_uraian" msprop:design-time-name="267d1f32-fcfd-4fff-b260-594135beb008" msprop:DbColumnName="cap_uraian" msprop:FriendlyName="cap_uraian" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_dim_waktu" msprop:design-time-name="d4a36438-5aec-48f2-b902-a3e70fa5c4ee" msprop:DbTableName="dim_waktu" msprop:FriendlyName="dim_waktu" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="wkt_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="403593e4-5913-4692-8cce-c99e4f6c80d2" msprop:DbColumnName="wkt_id" msprop:FriendlyName="wkt_id" type="xs:int" />
+                  <xs:element name="wkt_detail" msprop:design-time-name="e41fcfcf-4ded-40d8-b02a-3be205d8350a" msprop:DbColumnName="wkt_detail" msprop:FriendlyName="wkt_detail" type="xs:short" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_dim_capaian" />
+          <xs:field xpath="cap_id" />
+        </xs:unique>
+        <xs:unique name="dbo_dim_waktu_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_dim_waktu" />
+          <xs:field xpath="wkt_id" />
+        </xs:unique>
+        <xs:keyref name="FK_fakta_capaian_dim_capaian" refer="Constraint1">
+          <xs:selector xpath=".//dbo_fakta_capaian" />
+          <xs:field xpath="fcap_id" />
+        </xs:keyref>
+        <xs:keyref name="FK_fakta_capaian_dim_waktu" refer="dbo_dim_waktu_Constraint1">
+          <xs:selector xpath=".//dbo_fakta_capaian" />
+          <xs:field xpath="fcap_tahun" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <OCapaian xmlns="" />
+  </Schema>
+</DataSourceView>

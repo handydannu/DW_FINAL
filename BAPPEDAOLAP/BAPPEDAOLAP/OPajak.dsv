@@ -1,0 +1,119 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="a585d7fa-5095-4692-ab45-dbaf5d42e04f" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>OPajak</ID>
+  <Name>OPajak</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>BAPPEDADW</DataSourceID>
+  <Schema>
+    <xs:schema id="OPajak" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="OPajak" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="0512b2c2-8aa3-4861-bace-f19fb7ffd654">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_fakta_pajak" msprop:design-time-name="fef334e4-e2d3-494b-ad75-35540b44f312" msprop:DbTableName="fakta_pajak" msprop:FriendlyName="fakta_pajak" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="fpaj_tahun" msprop:design-time-name="6a90b546-2d78-458c-8264-9d1aee07a46b" msprop:DbColumnName="fpaj_tahun" msprop:FriendlyName="fpaj_tahun" type="xs:int" />
+                  <xs:element name="fpaj_id" msprop:design-time-name="84331a81-028c-4a26-9b80-464c2115bffa" msprop:DbColumnName="fpaj_id" msprop:FriendlyName="fpaj_id" type="xs:int" />
+                  <xs:element name="fpaj_kd_keg" msprop:design-time-name="70b3c747-4a04-42b3-86ec-1c42c0080bee" msprop:DbColumnName="fpaj_kd_keg" msprop:FriendlyName="fpaj_kd_keg" type="xs:short" />
+                  <xs:element name="fpaj_nilai" msprop:design-time-name="db9a0cef-62c4-48b6-b71c-a0f9ed565766" msprop:DbColumnName="fpaj_nilai" msprop:FriendlyName="fpaj_nilai" type="xs:decimal" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_dim_waktu" msprop:design-time-name="cdd5dcf6-17a0-4b32-b2db-0bd98d1c2266" msprop:DbTableName="dim_waktu" msprop:FriendlyName="dim_waktu" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="wkt_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="1b8e9c6b-c43e-44e1-acc8-0bc974b772f4" msprop:DbColumnName="wkt_id" msprop:FriendlyName="wkt_id" type="xs:int" />
+                  <xs:element name="wkt_detail" msprop:design-time-name="f4692de1-926a-4059-809f-d720ee3707d7" msprop:DbColumnName="wkt_detail" msprop:FriendlyName="wkt_detail" type="xs:short" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_dim_pajak" msprop:design-time-name="9fd59306-f52b-4db0-a08d-fcd7ea46a7fe" msprop:DbTableName="dim_pajak" msprop:FriendlyName="dim_pajak" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="paj_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="dc814881-90bd-4ed3-882b-187018ef6b8d" msprop:DbColumnName="paj_id" msprop:FriendlyName="paj_id" type="xs:int" />
+                  <xs:element name="paj_no_bukti" msprop:design-time-name="21078e93-d778-4bed-90e7-17f4c7785051" msprop:DbColumnName="paj_no_bukti" msprop:FriendlyName="paj_no_bukti">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="paj_kd_bidang" msprop:design-time-name="0f888d48-5f37-430b-a2a4-a87102385364" msprop:DbColumnName="paj_kd_bidang" msprop:FriendlyName="paj_kd_bidang" type="xs:unsignedByte" />
+                  <xs:element name="paj_kd_prog" msprop:design-time-name="edb7c2f8-e230-43db-afcd-e82b5ab6a9d5" msprop:DbColumnName="paj_kd_prog" msprop:FriendlyName="paj_kd_prog" type="xs:short" />
+                  <xs:element name="paj_kd_keg" msprop:design-time-name="b7174760-0fbd-4d52-9508-2875ee9c6b66" msprop:DbColumnName="paj_kd_keg" msprop:FriendlyName="paj_kd_keg" type="xs:short" />
+                  <xs:element name="paj_penyetor" msprop:design-time-name="5ad6959e-6af2-4634-ad58-ef2a945fbdd6" msprop:DbColumnName="paj_penyetor" msprop:FriendlyName="paj_penyetor" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="paj_keterangan" msprop:design-time-name="02753204-3211-48f6-89db-e25f122059a9" msprop:DbColumnName="paj_keterangan" msprop:FriendlyName="paj_keterangan">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_dim_waktu" />
+          <xs:field xpath="wkt_id" />
+        </xs:unique>
+        <xs:unique name="dbo_dim_pajak_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_dim_pajak" />
+          <xs:field xpath="paj_id" />
+        </xs:unique>
+        <xs:keyref name="FK_fakta_pajak_dim_waktu" refer="Constraint1">
+          <xs:selector xpath=".//dbo_fakta_pajak" />
+          <xs:field xpath="fpaj_tahun" />
+        </xs:keyref>
+        <xs:keyref name="FK_fakta_pajak_dim_pajak" refer="dbo_dim_pajak_Constraint1">
+          <xs:selector xpath=".//dbo_fakta_pajak" />
+          <xs:field xpath="fpaj_id" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <OPajak xmlns="" />
+  </Schema>
+</DataSourceView>

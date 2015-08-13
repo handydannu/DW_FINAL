@@ -1,0 +1,187 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="a87ce739-daf6-48ab-8add-74e7f7995a1b" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Indikator</ID>
+  <Name>Dim Indikator</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3552" scrolltop="-4815" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10213" y="12779" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="dim_indikator" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3069" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a0000fd0b00004d0c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_dim_indikator" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-3552</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-4815</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="e421d345-7bdf-4d30-9d0f-ad9aea74b89b">
+    <DataSourceViewID>OIndikator</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="a1d2c06d-bef0-4b51-94b1-86952298bdb2">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="cc1d5374-a3f3-404e-a4d6-3f0837a67876">
+      <ID>Ind Id</ID>
+      <Name>Ind Id</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0c8983cc-451c-431f-b8fb-d9f9687cd389">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="ab8282d3-3fc9-4ff7-ae28-2dae33936d37">
+            <TableID>dbo_dim_indikator</TableID>
+            <ColumnID>ind_id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="498345d1-9934-414d-bd0c-7f006fb29dde">
+          <AttributeID>Ind Kd Bidang</AttributeID>
+          <Name>Ind Kd Bidang</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="b85b626e-6cf5-45e7-af5d-04e162bf8308">
+          <AttributeID>Ind Kd Prog</AttributeID>
+          <Name>Ind Kd Prog</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ebbe4312-0193-4f38-b9cc-74e2b9d27651">
+          <AttributeID>Ind Kd Keg</AttributeID>
+          <Name>Ind Kd Keg</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="bdec3245-5934-47a3-ae3d-c338837f3eb0">
+      <ID>Ind Kd Bidang</ID>
+      <Name>Ind Kd Bidang</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="cd820eb1-30ef-4086-917f-4b797ebc5d57">
+          <DataType>UnsignedTinyInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="b02a0479-180d-4a13-b65f-672993b9c6e8">
+            <TableID>dbo_dim_indikator</TableID>
+            <ColumnID>ind_kd_bidang</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="798b339c-d2c1-49ef-854a-4def0460ecd5">
+      <ID>Ind Kd Prog</ID>
+      <Name>Ind Kd Prog</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="f674e0aa-de1d-4771-8ea6-8e1e23c33c57">
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d3f34d87-f4de-42d1-96aa-b283e27b3488">
+            <TableID>dbo_dim_indikator</TableID>
+            <ColumnID>ind_kd_prog</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b68b4ca1-1b8f-45cb-a5e3-d8ed8bdcafc2">
+      <ID>Ind Kd Keg</ID>
+      <Name>Ind Kd Keg</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e9414410-9ffc-4bd4-a42d-f5db27f626d3">
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e03a12d7-c61f-44c3-9205-b1741fc8e991">
+            <TableID>dbo_dim_indikator</TableID>
+            <ColumnID>ind_kd_keg</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="ab477dd0-ff34-4a76-be35-a99bed34a6d3">
+      <ID>Hierarchy</ID>
+      <Name>Hierarchy</Name>
+      <Levels>
+        <Level dwd:design-time-name="33d9e678-aac4-4176-b7ad-149a5a9b99db">
+          <ID>Ind Id</ID>
+          <Name>Ind Id</Name>
+          <SourceAttributeID>Ind Id</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="242ac761-d934-474d-bb0e-54ed03b7d5e8">
+          <ID>Ind Kd Bidang</ID>
+          <Name>Ind Kd Bidang</Name>
+          <SourceAttributeID>Ind Kd Bidang</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="c45b0be9-cdf0-4694-92da-62619bf60b6f">
+          <ID>Ind Kd Keg</ID>
+          <Name>Ind Kd Keg</Name>
+          <SourceAttributeID>Ind Kd Keg</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="667c2690-0712-4203-872c-13cd801159e1">
+          <ID>Ind Kd Prog</ID>
+          <Name>Ind Kd Prog</Name>
+          <SourceAttributeID>Ind Kd Prog</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

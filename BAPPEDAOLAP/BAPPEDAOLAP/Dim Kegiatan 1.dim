@@ -1,0 +1,187 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="9cb79b53-18d0-4b7f-9f8c-689a6b1fea70" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Kegiatan 1</ID>
+  <Name>Dim Kegiatan 1</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3499" scrolltop="-4815" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10213" y="12779" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="dim_kegiatan" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3175" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a0000670c00004d0c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_dim_kegiatan" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-3499</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-4815</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="649c5804-8802-404b-840f-45b45c8ff3f1">
+    <DataSourceViewID>OPK</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="f12c2176-ee62-4845-8ee2-e5ea86d26906">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="5acb6ea7-2cb3-4df3-9656-94bbf466f52c">
+      <ID>Keg Id</ID>
+      <Name>Keg Id</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="acc816c9-a939-4165-b036-967955c27877">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="24c56b86-40be-4d64-aa64-f5f9bc5bf29f">
+            <TableID>dbo_dim_kegiatan</TableID>
+            <ColumnID>keg_id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="0ff48ead-5bd7-4bd7-b1ff-71f6701ccd47">
+          <AttributeID>Keg Kd Keg</AttributeID>
+          <Name>Keg Kd Keg</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="3a1c51fc-a7bd-471f-86f2-0f834aa707b2">
+          <AttributeID>Keg Kd Bidang</AttributeID>
+          <Name>Keg Kd Bidang</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="05c61a5e-e248-4d40-8dff-40a6ba5a12b1">
+          <AttributeID>Keg Kd Prog</AttributeID>
+          <Name>Keg Kd Prog</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="4b8341ba-d247-43b1-a3dc-b97ccf4935f5">
+      <ID>Keg Kd Keg</ID>
+      <Name>Keg Kd Keg</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a2fef4f0-b733-489c-bbc5-ced01dd56f4a">
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="15e8e6e8-b583-4b85-b693-fd7977bb1fdb">
+            <TableID>dbo_dim_kegiatan</TableID>
+            <ColumnID>keg_kd_keg</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="bb591dc7-7c33-4e28-a137-0f0366bcf12e">
+      <ID>Keg Kd Bidang</ID>
+      <Name>Keg Kd Bidang</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="05094a58-fd89-471a-b0a9-d2a55cda45ed">
+          <DataType>UnsignedTinyInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cb4dda33-579a-44d0-ac55-f59bda617687">
+            <TableID>dbo_dim_kegiatan</TableID>
+            <ColumnID>keg_kd_bidang</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d55e9116-db62-4eac-bf43-14a69ca333da">
+      <ID>Keg Kd Prog</ID>
+      <Name>Keg Kd Prog</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="10240a7b-5795-47c5-b470-307f3f0032f0">
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="c471f269-1317-494d-9312-aa6d795e4ded">
+            <TableID>dbo_dim_kegiatan</TableID>
+            <ColumnID>keg_kd_prog</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="03a7ac3c-7618-4a51-b7a1-832391c6f685">
+      <ID>Hierarchy</ID>
+      <Name>Hierarchy</Name>
+      <Levels>
+        <Level dwd:design-time-name="43e2905d-756c-4364-add2-487a3f7bf651">
+          <ID>Keg Id</ID>
+          <Name>Keg Id</Name>
+          <SourceAttributeID>Keg Id</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="e0d8e6ed-fbb5-4f59-8847-351ab47b9c1e">
+          <ID>Keg Kd Bidang</ID>
+          <Name>Keg Kd Bidang</Name>
+          <SourceAttributeID>Keg Kd Bidang</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="0e3a9bba-89b4-49ef-aeeb-ddb8e7957944">
+          <ID>Keg Kd Keg</ID>
+          <Name>Keg Kd Keg</Name>
+          <SourceAttributeID>Keg Kd Keg</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="c56ef8b3-a3bb-423d-aba6-446d22bd99bf">
+          <ID>Keg Kd Prog</ID>
+          <Name>Keg Kd Prog</Name>
+          <SourceAttributeID>Keg Kd Prog</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

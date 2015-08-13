@@ -1,0 +1,152 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="4249b5fd-fa2e-41e9-a15a-abdd08376fb1" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>OPK</ID>
+  <Name>OPK</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>BAPPEDADW</DataSourceID>
+  <Schema>
+    <xs:schema id="OPK" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="OPK" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="4594d92f-808b-4c14-8b54-4e672c0c946e">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_fakta_p_k" msprop:design-time-name="5c996c2c-b11f-40c9-b1bf-e00341007bc1" msprop:DbTableName="fakta_p_k" msprop:FriendlyName="fakta_p_k" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="fpk_tahun" msprop:design-time-name="18629e0c-acf7-479a-9d5a-6c89b27644de" msprop:DbColumnName="fpk_tahun" msprop:FriendlyName="fpk_tahun" type="xs:int" />
+                  <xs:element name="fpk_kd_prog" msprop:design-time-name="481e4402-991b-45dc-8d26-8fca158dfa0d" msprop:DbColumnName="fpk_kd_prog" msprop:FriendlyName="fpk_kd_prog" type="xs:int" />
+                  <xs:element name="fpk_kd_keg" msprop:design-time-name="b19afd80-089d-4425-9ff1-585d2441c24a" msprop:DbColumnName="fpk_kd_keg" msprop:FriendlyName="fpk_kd_keg" type="xs:int" />
+                  <xs:element name="fpk_kd_bidang" msprop:design-time-name="f73b9d78-b17e-4af8-b757-5c7d3f8d8680" msprop:DbColumnName="fpk_kd_bidang" msprop:FriendlyName="fpk_kd_bidang" type="xs:int" />
+                  <xs:element name="fpk_anggaran" msprop:design-time-name="1ae0c9d0-be81-4bb0-8888-c797892c8ea6" msprop:DbColumnName="fpk_anggaran" msprop:FriendlyName="fpk_anggaran" type="xs:decimal" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_dim_bidang" msprop:design-time-name="c876798a-25ba-4cb0-9aaf-f41d6e7f58d8" msprop:DbTableName="dim_bidang" msprop:FriendlyName="dim_bidang" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="bid_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="5a23b236-a688-4b54-9d9d-46b3634b32f3" msprop:DbColumnName="bid_id" msprop:FriendlyName="bid_id" type="xs:int" />
+                  <xs:element name="bid_kd_bidang" msprop:design-time-name="9a4e8d35-a6cc-49a8-9ecc-4471e9597cf6" msprop:DbColumnName="bid_kd_bidang" msprop:FriendlyName="bid_kd_bidang" type="xs:unsignedByte" />
+                  <xs:element name="bid_keterangan" msprop:design-time-name="6ca5bac8-5dd2-40b3-8688-6a920afaccd2" msprop:DbColumnName="bid_keterangan" msprop:FriendlyName="bid_keterangan">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_dim_program" msprop:design-time-name="92fc0382-936d-416b-8d25-337ec8d5403b" msprop:DbTableName="dim_program" msprop:FriendlyName="dim_program" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="prog_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="9d3befc5-cbee-462f-ad64-53cbd9421ce7" msprop:DbColumnName="prog_id" msprop:FriendlyName="prog_id" type="xs:int" />
+                  <xs:element name="prog_kd_prog" msprop:design-time-name="d2c82082-c1cc-4973-b77a-e6318fdd9e3f" msprop:DbColumnName="prog_kd_prog" msprop:FriendlyName="prog_kd_prog" type="xs:unsignedByte" />
+                  <xs:element name="prog_keterangan" msprop:design-time-name="1e81c5ee-e126-4fed-a4ed-a937f6d2855c" msprop:DbColumnName="prog_keterangan" msprop:FriendlyName="prog_keterangan">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_dim_kegiatan" msprop:design-time-name="b26d2425-5de6-437c-bf0c-b396b989b11f" msprop:DbTableName="dim_kegiatan" msprop:FriendlyName="dim_kegiatan" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="keg_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="9f0786c8-2c01-458e-b6ba-21b9f83fe424" msprop:DbColumnName="keg_id" msprop:FriendlyName="keg_id" type="xs:int" />
+                  <xs:element name="keg_kd_keg" msprop:design-time-name="d0012c62-1ac6-4dd2-9f04-5e3abcda5e7f" msprop:DbColumnName="keg_kd_keg" msprop:FriendlyName="keg_kd_keg" type="xs:short" />
+                  <xs:element name="keg_kd_bidang" msprop:design-time-name="984312b2-e922-48d0-b725-24f0fa799938" msprop:DbColumnName="keg_kd_bidang" msprop:FriendlyName="keg_kd_bidang" type="xs:unsignedByte" />
+                  <xs:element name="keg_kd_prog" msprop:design-time-name="71dfe265-d878-46a5-86ed-ac65003cf818" msprop:DbColumnName="keg_kd_prog" msprop:FriendlyName="keg_kd_prog" type="xs:short" />
+                  <xs:element name="keg_uraian" msprop:design-time-name="b400c17c-71b7-4332-95c3-1ecf2bb12e82" msprop:DbColumnName="keg_uraian" msprop:FriendlyName="keg_uraian" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_dim_waktu" msprop:design-time-name="5d76ded7-fbfc-4aac-b00e-83b3cd92f0ff" msprop:DbTableName="dim_waktu" msprop:FriendlyName="dim_waktu" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="wkt_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="f773d095-1f40-4701-bfb5-aac5b5fe18d7" msprop:DbColumnName="wkt_id" msprop:FriendlyName="wkt_id" type="xs:int" />
+                  <xs:element name="wkt_detail" msprop:design-time-name="c1e282ac-872a-48b5-b011-5ca15fd29450" msprop:DbColumnName="wkt_detail" msprop:FriendlyName="wkt_detail" type="xs:short" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_dim_bidang" />
+          <xs:field xpath="bid_id" />
+        </xs:unique>
+        <xs:unique name="dbo_dim_program_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_dim_program" />
+          <xs:field xpath="prog_id" />
+        </xs:unique>
+        <xs:unique name="dbo_dim_kegiatan_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_dim_kegiatan" />
+          <xs:field xpath="keg_id" />
+        </xs:unique>
+        <xs:unique name="dbo_dim_waktu_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_dim_waktu" />
+          <xs:field xpath="wkt_id" />
+        </xs:unique>
+        <xs:keyref name="FK_fakta_p_k_dim_keg" refer="dbo_dim_kegiatan_Constraint1">
+          <xs:selector xpath=".//dbo_fakta_p_k" />
+          <xs:field xpath="fpk_kd_keg" />
+        </xs:keyref>
+        <xs:keyref name="FK_fakta_p_k_dim_prog" refer="dbo_dim_program_Constraint1">
+          <xs:selector xpath=".//dbo_fakta_p_k" />
+          <xs:field xpath="fpk_kd_prog" />
+        </xs:keyref>
+        <xs:keyref name="FK_fakta_p_k_dim_waktu" refer="dbo_dim_waktu_Constraint1">
+          <xs:selector xpath=".//dbo_fakta_p_k" />
+          <xs:field xpath="fpk_tahun" />
+        </xs:keyref>
+        <xs:keyref name="FK_fakta_p_k_dim_bidang" refer="Constraint1">
+          <xs:selector xpath=".//dbo_fakta_p_k" />
+          <xs:field xpath="fpk_kd_bidang" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <OPK xmlns="" />
+  </Schema>
+</DataSourceView>

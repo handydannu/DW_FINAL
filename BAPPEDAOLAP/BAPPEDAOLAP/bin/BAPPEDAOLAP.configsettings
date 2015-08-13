@@ -1,0 +1,181 @@
+﻿<ConfigurationSettings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Database>
+    <DataSources>
+      <DataSource>
+        <ID>BAPPEDADW</ID>
+        <ConnectionString>Provider=SQLNCLI11.1;Data Source=DANNU;Integrated Security=SSPI;Initial Catalog=BAPPEDADW</ConnectionString>
+        <ImpersonationInfo>
+          <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">ImpersonateAccount</ImpersonationMode>
+          <Account xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">dannu</Account>
+          <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">PasswordRemoved</ImpersonationInfoSecurity>
+        </ImpersonationInfo>
+      </DataSource>
+    </DataSources>
+    <Dimensions>
+      <Dimension>
+        <ID>Dim Bidang</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Pendapatan</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Pembiayaan</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Waktu</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Belanja</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Kegiatan</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Capaian</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Program</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Indikator</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Kontrak</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Pajak</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Waktu 1</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Unit</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Subunit</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Bidang 1</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Waktu 2</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Program 1</ID>
+      </Dimension>
+      <Dimension>
+        <ID>Dim Kegiatan 1</ID>
+      </Dimension>
+    </Dimensions>
+    <Cubes>
+      <Cube>
+        <ID>OAnggaran</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Fakta Anggaran</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fakta Anggaran</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>OBelanja</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Fakta Belanja</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fakta Belanja</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>OCapaian</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Fakta Capaian</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fakta Capaian</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>OIndikator</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Fakta Indikator</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fakta Indikator</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>OKerjasama</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Fakta Kerjasama</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fakta Kerjasama</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>OPajak</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Fakta Pajak</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fakta Pajak</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>OPerangkat</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Fakta Perangkat</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fakta Perangkat</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+      <Cube>
+        <ID>OPK</ID>
+        <MeasureGroups>
+          <MeasureGroup>
+            <ID>Fakta p K</ID>
+            <Partitions>
+              <Partition>
+                <ID>Fakta p K</ID>
+              </Partition>
+            </Partitions>
+          </MeasureGroup>
+        </MeasureGroups>
+      </Cube>
+    </Cubes>
+    <DataSourceImpersonationInfo>
+      <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Default</ImpersonationMode>
+      <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Unchanged</ImpersonationInfoSecurity>
+    </DataSourceImpersonationInfo>
+  </Database>
+</ConfigurationSettings>

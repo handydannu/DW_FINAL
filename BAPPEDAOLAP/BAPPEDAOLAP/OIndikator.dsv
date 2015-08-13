@@ -1,0 +1,161 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="7979a747-917e-4d23-93f9-adcc6c76aebc" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>OIndikator</ID>
+  <Name>OIndikator</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>BAPPEDADW</DataSourceID>
+  <Schema>
+    <xs:schema id="OIndikator" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="OIndikator" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="29a70c7e-c1b3-4d45-a8b7-8f7715b6b772">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_fakta_indikator" msprop:design-time-name="74e5675a-ceac-401a-b8d4-2051e465ffb6" msprop:DbTableName="fakta_indikator" msprop:FriendlyName="fakta_indikator" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="find_waktu" msprop:design-time-name="26a3bb75-b1a2-498d-8941-df262f612ce3" msprop:DbColumnName="find_waktu" msprop:FriendlyName="find_waktu" type="xs:int" />
+                  <xs:element name="find_id" msprop:design-time-name="cd8bbcfc-dd67-4be5-8062-9922bf5bdf24" msprop:DbColumnName="find_id" msprop:FriendlyName="find_id" type="xs:int" />
+                  <xs:element name="find_kd_prog" msprop:design-time-name="d45b62bd-a695-40d0-9e82-262dde3ff238" msprop:DbColumnName="find_kd_prog" msprop:FriendlyName="find_kd_prog" type="xs:int" />
+                  <xs:element name="find_kd_keg" msprop:design-time-name="7a43f22e-ba48-458a-a7ec-17544ac52c04" msprop:DbColumnName="find_kd_keg" msprop:FriendlyName="find_kd_keg" type="xs:int" />
+                  <xs:element name="find_target" msprop:design-time-name="3d7807e0-3fe0-4245-b496-8af6e54d6465" msprop:DbColumnName="find_target" msprop:FriendlyName="find_target" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="find_uraian" msprop:design-time-name="bacf6fd1-e018-495f-a26a-c65598f0b18b" msprop:DbColumnName="find_uraian" msprop:FriendlyName="find_uraian" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_dim_program" msprop:design-time-name="38eceb31-84bb-473c-96bc-663c7a9c1816" msprop:DbTableName="dim_program" msprop:FriendlyName="dim_program" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="prog_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="a12fedfc-afdc-4bbb-bf9f-fa8c8e4e19dd" msprop:DbColumnName="prog_id" msprop:FriendlyName="prog_id" type="xs:int" />
+                  <xs:element name="prog_kd_prog" msprop:design-time-name="96fcd79d-ed88-4f1c-9f34-7668cbe2a78c" msprop:DbColumnName="prog_kd_prog" msprop:FriendlyName="prog_kd_prog" type="xs:unsignedByte" />
+                  <xs:element name="prog_keterangan" msprop:design-time-name="3baadba6-2913-4889-8317-349213a12565" msprop:DbColumnName="prog_keterangan" msprop:FriendlyName="prog_keterangan">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_dim_waktu" msprop:design-time-name="4c4c6bec-69f4-4e21-948c-4adac243adf6" msprop:DbTableName="dim_waktu" msprop:FriendlyName="dim_waktu" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="wkt_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="8eb5daef-e71d-4bd4-80b4-8ce5426a81cb" msprop:DbColumnName="wkt_id" msprop:FriendlyName="wkt_id" type="xs:int" />
+                  <xs:element name="wkt_detail" msprop:design-time-name="caeb77ae-82d3-4644-a6bd-e823dece5fcc" msprop:DbColumnName="wkt_detail" msprop:FriendlyName="wkt_detail" type="xs:short" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_dim_indikator" msprop:design-time-name="119431a1-2882-4787-939d-8ecb1525d0b1" msprop:DbTableName="dim_indikator" msprop:FriendlyName="dim_indikator" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ind_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="8be7b306-dd58-41d1-89be-688b6d844a7b" msprop:DbColumnName="ind_id" msprop:FriendlyName="ind_id" type="xs:int" />
+                  <xs:element name="ind_kd_bidang" msprop:design-time-name="abd1a404-cf53-4249-9712-c63cabf992c7" msprop:DbColumnName="ind_kd_bidang" msprop:FriendlyName="ind_kd_bidang" type="xs:unsignedByte" />
+                  <xs:element name="ind_kd_prog" msprop:design-time-name="29170550-8430-4cc7-ba6a-183ff559257e" msprop:DbColumnName="ind_kd_prog" msprop:FriendlyName="ind_kd_prog" type="xs:short" />
+                  <xs:element name="ind_kd_keg" msprop:design-time-name="31dd45e8-0225-470a-a364-25f67fee72f0" msprop:DbColumnName="ind_kd_keg" msprop:FriendlyName="ind_kd_keg" type="xs:short" />
+                  <xs:element name="ind_uraian" msprop:design-time-name="163f7b0a-4d59-4aa0-ab36-e09a965fea6f" msprop:DbColumnName="ind_uraian" msprop:FriendlyName="ind_uraian" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_dim_kegiatan" msprop:design-time-name="2ecb9d2b-a1a5-47e7-b26c-2b13ff78427e" msprop:DbTableName="dim_kegiatan" msprop:FriendlyName="dim_kegiatan" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="keg_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="cf274491-1b84-46c9-b11e-d1591c676e4a" msprop:DbColumnName="keg_id" msprop:FriendlyName="keg_id" type="xs:int" />
+                  <xs:element name="keg_kd_keg" msprop:design-time-name="df4d51c7-c08f-405a-ad71-8458cc07cdb9" msprop:DbColumnName="keg_kd_keg" msprop:FriendlyName="keg_kd_keg" type="xs:short" />
+                  <xs:element name="keg_kd_bidang" msprop:design-time-name="df20ebdc-0e4a-47df-9463-779383ab8a70" msprop:DbColumnName="keg_kd_bidang" msprop:FriendlyName="keg_kd_bidang" type="xs:unsignedByte" />
+                  <xs:element name="keg_kd_prog" msprop:design-time-name="ea7a7866-be26-48b5-9b34-d15d286211c8" msprop:DbColumnName="keg_kd_prog" msprop:FriendlyName="keg_kd_prog" type="xs:short" />
+                  <xs:element name="keg_uraian" msprop:design-time-name="e612dd4d-d29b-40a1-8623-3f942f7299b3" msprop:DbColumnName="keg_uraian" msprop:FriendlyName="keg_uraian" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_dim_program" />
+          <xs:field xpath="prog_id" />
+        </xs:unique>
+        <xs:unique name="dbo_dim_waktu_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_dim_waktu" />
+          <xs:field xpath="wkt_id" />
+        </xs:unique>
+        <xs:unique name="dbo_dim_indikator_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_dim_indikator" />
+          <xs:field xpath="ind_id" />
+        </xs:unique>
+        <xs:unique name="dbo_dim_kegiatan_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_dim_kegiatan" />
+          <xs:field xpath="keg_id" />
+        </xs:unique>
+        <xs:keyref name="FK_fakta_indikator_dim_waktu" refer="dbo_dim_waktu_Constraint1">
+          <xs:selector xpath=".//dbo_fakta_indikator" />
+          <xs:field xpath="find_waktu" />
+        </xs:keyref>
+        <xs:keyref name="FK_fakta_indikator_dim_indikator" refer="dbo_dim_indikator_Constraint1">
+          <xs:selector xpath=".//dbo_fakta_indikator" />
+          <xs:field xpath="find_id" />
+        </xs:keyref>
+        <xs:keyref name="FK_fakta_indikator_dim_kegiatan" refer="dbo_dim_kegiatan_Constraint1">
+          <xs:selector xpath=".//dbo_fakta_indikator" />
+          <xs:field xpath="find_kd_keg" />
+        </xs:keyref>
+        <xs:keyref name="FK_fakta_indikator_dim_program" refer="Constraint1">
+          <xs:selector xpath=".//dbo_fakta_indikator" />
+          <xs:field xpath="find_kd_prog" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <OIndikator xmlns="" />
+  </Schema>
+</DataSourceView>

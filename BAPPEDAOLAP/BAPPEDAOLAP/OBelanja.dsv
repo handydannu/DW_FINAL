@@ -1,0 +1,132 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="ba3f36ce-0ea8-4c9d-9765-f27bbeefea9f" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>OBelanja</ID>
+  <Name>OBelanja</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>BAPPEDADW</DataSourceID>
+  <Schema>
+    <xs:schema id="OBelanja" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="OBelanja" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="6aaefc39-53bf-4965-97a1-8e7fe5f58fc6">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_fakta_belanja" msprop:design-time-name="1574bf53-7f8b-4046-82ee-6fe401994128" msprop:DbTableName="fakta_belanja" msprop:FriendlyName="fakta_belanja" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="fbel_id" msprop:design-time-name="582dc607-4ce0-4317-b041-72975e43820e" msprop:DbColumnName="fbel_id" msprop:FriendlyName="fbel_id" type="xs:int" />
+                  <xs:element name="fbel_tahun" msprop:design-time-name="3b411205-b2bf-4774-82a5-5e0698dbe886" msprop:DbColumnName="fbel_tahun" msprop:FriendlyName="fbel_tahun" type="xs:int" />
+                  <xs:element name="fbel_kd_keg" msprop:design-time-name="269a88f9-5527-4560-bcfb-992037a87dbc" msprop:DbColumnName="fbel_kd_keg" msprop:FriendlyName="fbel_kd_keg" type="xs:int" />
+                  <xs:element name="fbel_satuan" msprop:design-time-name="be7f421a-307c-474e-9df7-e655710be642" msprop:DbColumnName="fbel_satuan" msprop:FriendlyName="fbel_satuan" type="xs:decimal" />
+                  <xs:element name="fbel_nilai" msprop:design-time-name="417698ec-b769-4eb5-b57b-089b23c36ade" msprop:DbColumnName="fbel_nilai" msprop:FriendlyName="fbel_nilai" type="xs:decimal" />
+                  <xs:element name="fbel_total" msprop:design-time-name="a1f3c693-26e5-4ad6-a36a-1a13cf44b59a" msprop:DbColumnName="fbel_total" msprop:FriendlyName="fbel_total" type="xs:decimal" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_dim_belanja" msprop:design-time-name="ffa1f39b-0199-43c6-802e-bcdd9e97a218" msprop:DbTableName="dim_belanja" msprop:FriendlyName="dim_belanja" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="bel_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="cdd4f0e6-dc2d-4158-8ab0-0df28a88a05f" msprop:DbColumnName="bel_id" msprop:FriendlyName="bel_id" type="xs:int" />
+                  <xs:element name="bel_kd_bidang" msprop:design-time-name="4e6da08f-e4cd-4333-a271-279b2730c410" msprop:DbColumnName="bel_kd_bidang" msprop:FriendlyName="bel_kd_bidang" type="xs:unsignedByte" />
+                  <xs:element name="bel_kd_prog" msprop:design-time-name="bec4bc03-ee87-4e36-9129-893af63c1a29" msprop:DbColumnName="bel_kd_prog" msprop:FriendlyName="bel_kd_prog" type="xs:short" />
+                  <xs:element name="bel_kd_keg" msprop:design-time-name="fae67019-9e79-4295-8dd1-daa40c589230" msprop:DbColumnName="bel_kd_keg" msprop:FriendlyName="bel_kd_keg" type="xs:short" />
+                  <xs:element name="bel_keterangan" msprop:design-time-name="8bc8af73-f147-4930-b166-5d352db6d512" msprop:DbColumnName="bel_keterangan" msprop:FriendlyName="bel_keterangan" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_dim_waktu" msprop:design-time-name="8e6ee6e7-a662-4a23-ac7b-3c87a363c152" msprop:DbTableName="dim_waktu" msprop:FriendlyName="dim_waktu" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="wkt_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="9b618771-2a80-4995-8455-eeb54559cfaa" msprop:DbColumnName="wkt_id" msprop:FriendlyName="wkt_id" type="xs:int" />
+                  <xs:element name="wkt_detail" msprop:design-time-name="e3cb7994-5d01-459b-8d6e-0626cf5254f8" msprop:DbColumnName="wkt_detail" msprop:FriendlyName="wkt_detail" type="xs:short" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_dim_kegiatan" msprop:design-time-name="1fca9d5b-ef26-4ff7-8cb1-b27734933850" msprop:DbTableName="dim_kegiatan" msprop:FriendlyName="dim_kegiatan" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="keg_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="2d03869c-ec54-48b5-af00-d41480a328a0" msprop:DbColumnName="keg_id" msprop:FriendlyName="keg_id" type="xs:int" />
+                  <xs:element name="keg_kd_keg" msprop:design-time-name="d32f1982-5eda-478f-bf70-b809d0d631d7" msprop:DbColumnName="keg_kd_keg" msprop:FriendlyName="keg_kd_keg" type="xs:short" />
+                  <xs:element name="keg_kd_bidang" msprop:design-time-name="644fc5a3-1b35-4f1a-9baa-3d82700daeea" msprop:DbColumnName="keg_kd_bidang" msprop:FriendlyName="keg_kd_bidang" type="xs:unsignedByte" />
+                  <xs:element name="keg_kd_prog" msprop:design-time-name="ecf8cc8a-b6da-4911-bfad-38ee949369d7" msprop:DbColumnName="keg_kd_prog" msprop:FriendlyName="keg_kd_prog" type="xs:short" />
+                  <xs:element name="keg_uraian" msprop:design-time-name="6f869577-7736-41be-ac1f-d707d003aaae" msprop:DbColumnName="keg_uraian" msprop:FriendlyName="keg_uraian" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_dim_belanja" />
+          <xs:field xpath="bel_id" />
+        </xs:unique>
+        <xs:unique name="dbo_dim_waktu_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_dim_waktu" />
+          <xs:field xpath="wkt_id" />
+        </xs:unique>
+        <xs:unique name="dbo_dim_kegiatan_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_dim_kegiatan" />
+          <xs:field xpath="keg_id" />
+        </xs:unique>
+        <xs:keyref name="FK_fakta_belanja_dim_kegiatan" refer="dbo_dim_kegiatan_Constraint1">
+          <xs:selector xpath=".//dbo_fakta_belanja" />
+          <xs:field xpath="fbel_kd_keg" />
+        </xs:keyref>
+        <xs:keyref name="FK_fakta_belanja_dim_belanja" refer="Constraint1">
+          <xs:selector xpath=".//dbo_fakta_belanja" />
+          <xs:field xpath="fbel_id" />
+        </xs:keyref>
+        <xs:keyref name="FK_fakta_belanja_dim_waktu" refer="dbo_dim_waktu_Constraint1">
+          <xs:selector xpath=".//dbo_fakta_belanja" />
+          <xs:field xpath="fbel_tahun" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <OBelanja xmlns="" />
+  </Schema>
+</DataSourceView>

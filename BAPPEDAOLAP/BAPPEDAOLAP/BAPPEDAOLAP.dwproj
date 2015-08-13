@@ -1,0 +1,226 @@
+﻿<Project xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <ProductVersion>12.0.2430.0</ProductVersion>
+  <SchemaVersion>9.0.2.10</SchemaVersion>
+  <State>$base64$PFNvdXJjZUNvbnRyb2xJbmZvIHhtbG5zOnhzZD0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zOmRkbDI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yIiB4bWxuczpkZGwyXzI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yLzIiIHhtbG5zOmRkbDEwMF8xMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDA4L2VuZ2luZS8xMDAvMTAwIiB4bWxuczpkZGwyMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAiIHhtbG5zOmRkbDIwMF8yMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAvMjAwIiB4bWxuczpkZGwzMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDExL2VuZ2luZS8zMDAiIHhtbG5zOmRkbDMwMF8zMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDExL2VuZ2luZS8zMDAvMzAwIiB4bWxuczpkZGw0MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEyL2VuZ2luZS80MDAiIHhtbG5zOmRkbDQwMF80MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEyL2VuZ2luZS80MDAvNDAwIiB4bWxuczpkd2Q9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vRGF0YVdhcmVob3VzZS9EZXNpZ25lci8xLjAiPg0KICA8RW5hYmxlZD5mYWxzZTwvRW5hYmxlZD4NCiAgPFByb2plY3ROYW1lPjwvUHJvamVjdE5hbWU+DQogIDxBdXhQYXRoPjwvQXV4UGF0aD4NCiAgPExvY2FsUGF0aD48L0xvY2FsUGF0aD4NCiAgPFByb3ZpZGVyPjwvUHJvdmlkZXI+DQo8L1NvdXJjZUNvbnRyb2xJbmZvPg==</State>
+  <Database>
+    <Name>BAPPEDAOLAP.database</Name>
+    <FullPath>BAPPEDAOLAP.database</FullPath>
+  </Database>
+  <Cubes>
+    <ProjectItem>
+      <Name>OAnggaran.cube</Name>
+      <FullPath>OAnggaran.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>OAnggaran.partitions</Name>
+          <FullPath>OAnggaran.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>OBelanja.cube</Name>
+      <FullPath>OBelanja.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>OBelanja.partitions</Name>
+          <FullPath>OBelanja.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>OCapaian.cube</Name>
+      <FullPath>OCapaian.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>OCapaian.partitions</Name>
+          <FullPath>OCapaian.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>OIndikator.cube</Name>
+      <FullPath>OIndikator.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>OIndikator.partitions</Name>
+          <FullPath>OIndikator.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>OKerjasama.cube</Name>
+      <FullPath>OKerjasama.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>OKerjasama.partitions</Name>
+          <FullPath>OKerjasama.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>OPajak.cube</Name>
+      <FullPath>OPajak.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>OPajak.partitions</Name>
+          <FullPath>OPajak.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>OPerangkat.cube</Name>
+      <FullPath>OPerangkat.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>OPerangkat.partitions</Name>
+          <FullPath>OPerangkat.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>OPK.cube</Name>
+      <FullPath>OPK.cube</FullPath>
+      <Dependencies>
+        <ProjectItem>
+          <Name>OPK.partitions</Name>
+          <FullPath>OPK.partitions</FullPath>
+        </ProjectItem>
+      </Dependencies>
+    </ProjectItem>
+  </Cubes>
+  <Dimensions>
+    <ProjectItem>
+      <Name>Dim Bidang.dim</Name>
+      <FullPath>Dim Bidang.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Pendapatan.dim</Name>
+      <FullPath>Dim Pendapatan.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Pembiayaan.dim</Name>
+      <FullPath>Dim Pembiayaan.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Waktu.dim</Name>
+      <FullPath>Dim Waktu.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Belanja.dim</Name>
+      <FullPath>Dim Belanja.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Kegiatan.dim</Name>
+      <FullPath>Dim Kegiatan.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Capaian.dim</Name>
+      <FullPath>Dim Capaian.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Program.dim</Name>
+      <FullPath>Dim Program.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Indikator.dim</Name>
+      <FullPath>Dim Indikator.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Kontrak.dim</Name>
+      <FullPath>Dim Kontrak.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Pajak.dim</Name>
+      <FullPath>Dim Pajak.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Waktu 1 1.dim</Name>
+      <FullPath>Dim Waktu 1 1.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Unit.dim</Name>
+      <FullPath>Dim Unit.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Subunit.dim</Name>
+      <FullPath>Dim Subunit.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Bidang 1.dim</Name>
+      <FullPath>Dim Bidang 1.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Waktu 2.dim</Name>
+      <FullPath>Dim Waktu 2.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Program 1.dim</Name>
+      <FullPath>Dim Program 1.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Kegiatan 1.dim</Name>
+      <FullPath>Dim Kegiatan 1.dim</FullPath>
+    </ProjectItem>
+  </Dimensions>
+  <DataSources>
+    <ProjectItem>
+      <Name>BAPPEDADW.ds</Name>
+      <FullPath>BAPPEDADW.ds</FullPath>
+    </ProjectItem>
+  </DataSources>
+  <DataSourceViews>
+    <ProjectItem>
+      <Name>OAnggaran.dsv</Name>
+      <FullPath>OAnggaran.dsv</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>OBelanja.dsv</Name>
+      <FullPath>OBelanja.dsv</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>OCapaian.dsv</Name>
+      <FullPath>OCapaian.dsv</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>OIndikator.dsv</Name>
+      <FullPath>OIndikator.dsv</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>OKerjasama.dsv</Name>
+      <FullPath>OKerjasama.dsv</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>OPajak.dsv</Name>
+      <FullPath>OPajak.dsv</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>OPerangkat.dsv</Name>
+      <FullPath>OPerangkat.dsv</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>OPK.dsv</Name>
+      <FullPath>OPK.dsv</FullPath>
+    </ProjectItem>
+  </DataSourceViews>
+  <Configurations>
+    <Configuration>
+      <Name>Development</Name>
+      <Options>
+        <ConnectionMappings>
+          <ConfigurationSetting>
+            <Id>BAPPEDADW</Id>
+            <Name>BAPPEDADW</Name>
+            <Value xsi:type="xsd:string">Provider=SQLNCLI11.1;Data Source=DANNU;Integrated Security=SSPI;Initial Catalog=BAPPEDADW</Value>
+          </ConfigurationSetting>
+        </ConnectionMappings>
+        <ConnectionSecurityMappings>
+          <ConfigurationSetting>
+            <Id>BAPPEDADW</Id>
+            <Name>BAPPEDADW</Name>
+            <Value xsi:type="xsd:int">0</Value>
+          </ConfigurationSetting>
+        </ConnectionSecurityMappings>
+      </Options>
+    </Configuration>
+  </Configurations>
+</Project>

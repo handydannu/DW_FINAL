@@ -1,0 +1,278 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>BAPPEDAOLAP</Database>
+    <Server>DANNU</Server>
+    <ConnectionString>DataSource=DANNU;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>o2l1UJ09Z55tWPoBVR87NZsFIAQ=22/06/2015 12:56:0119/06/2015 13:49:39</TimeStamp>
+        <ID>
+          <String>BAPPEDADW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>Z2qWTGSllBeOiW2+2Di0Ffgb+QE=25/06/2015 19:24:3525/06/2015 19:16:55</TimeStamp>
+        <ID>
+          <String>OAnggaran</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>MxY6/FIi/NOl7Ojrq3bXzTt1ths=25/06/2015 20:37:1025/06/2015 20:37:10</TimeStamp>
+        <ID>
+          <String>OBelanja</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>hZTLyoi7/bpBNMcDyXzgIrTZe6A=25/06/2015 20:58:2025/06/2015 20:57:44</TimeStamp>
+        <ID>
+          <String>OCapaian</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>BVpRCFwnJvsAMbyX9lDQQKtB7/8=25/06/2015 21:00:4225/06/2015 21:00:42</TimeStamp>
+        <ID>
+          <String>OIndikator</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>DwbLtvH9OJ9ojtVbQ+Ta+ubMbG0=25/06/2015 21:03:4725/06/2015 21:03:46</TimeStamp>
+        <ID>
+          <String>OKerjasama</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>kMQachnirZjNbw6E71Pyk0q28WE=27/06/2015 10:34:4127/06/2015 10:34:40</TimeStamp>
+        <ID>
+          <String>OPajak</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>21IiK4oHAuVnYWiAwgkqCxIpR9c=27/06/2015 10:57:1427/06/2015 10:57:05</TimeStamp>
+        <ID>
+          <String>OPerangkat</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>vMvJDyY7ez4PUubkvMzGxLQw1ao=27/06/2015 15:06:4927/06/2015 15:06:44</TimeStamp>
+        <ID>
+          <String>OPK</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>JxxzWy6zxA/wvOKz5niPqNWYKvc=25/06/2015 19:17:3325/06/2015 19:17:12</TimeStamp>
+        <ID>
+          <String>Dim Bidang</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>R+dvPNoVoSRqGOtbNxUbLACqEO0=25/06/2015 19:26:1525/06/2015 19:17:12</TimeStamp>
+        <ID>
+          <String>Dim Pendapatan</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>yGhMKjK2hI6+0Jo4ZZtsibEO+qo=25/06/2015 19:18:2225/06/2015 19:17:12</TimeStamp>
+        <ID>
+          <String>Dim Pembiayaan</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Ikshckm4AXRigmKqD3ErDhtjky4=25/06/2015 19:18:3425/06/2015 19:17:12</TimeStamp>
+        <ID>
+          <String>Dim Waktu</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Ru1LgiYggY4nUSXXysSKAnrHXsI=25/06/2015 20:41:2525/06/2015 20:37:28</TimeStamp>
+        <ID>
+          <String>Dim Belanja</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>gitfRtr+DLSM1WyIfrjSKrTFSBo=25/06/2015 20:40:1325/06/2015 20:37:28</TimeStamp>
+        <ID>
+          <String>Dim Kegiatan</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>0sf1HBbheyKBdXbUpsEMT8uV4q8=25/06/2015 21:24:0925/06/2015 20:58:48</TimeStamp>
+        <ID>
+          <String>Dim Capaian</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>NbX89f9ge+ax+FcMcAWY/CNsq4U=25/06/2015 21:01:0425/06/2015 21:01:04</TimeStamp>
+        <ID>
+          <String>Dim Program</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>b1W64wMe+i5TzU7p/KDShl6m6Wc=25/06/2015 21:20:1925/06/2015 21:01:04</TimeStamp>
+        <ID>
+          <String>Dim Indikator</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>ysP1tP+syi76SNSzJejvmxGPJjs=25/06/2015 21:05:2825/06/2015 21:04:03</TimeStamp>
+        <ID>
+          <String>Dim Kontrak</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>avnWcubeGT2BccM2weeZHaFGqeY=27/06/2015 10:38:2927/06/2015 10:36:24</TimeStamp>
+        <ID>
+          <String>Dim Pajak</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>JzJb8ayfveK3/sWH8ZbwWySElLE=27/06/2015 10:59:1727/06/2015 10:57:49</TimeStamp>
+        <ID>
+          <String>Dim Waktu 1</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>K/Yp9nvcK/eFvAL9VJ1w59VlPh0=27/06/2015 10:59:1727/06/2015 10:57:49</TimeStamp>
+        <ID>
+          <String>Dim Unit</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Og9/LANLZU4Py8dJ+1g5qN63kJs=27/06/2015 11:00:4627/06/2015 10:57:49</TimeStamp>
+        <ID>
+          <String>Dim Subunit</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>d6JMXVhuiV2BVZSMoyJRR7t5iRY=27/06/2015 15:33:1127/06/2015 15:30:15</TimeStamp>
+        <ID>
+          <String>Dim Bidang 1</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>k0ZCg/ugvDwIvMArkl0YhyeVCxk=27/06/2015 15:33:1127/06/2015 15:30:16</TimeStamp>
+        <ID>
+          <String>Dim Waktu 2</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>n9K4z7zSAn2qdxp363oRRMS0NLU=27/06/2015 15:33:1227/06/2015 15:30:16</TimeStamp>
+        <ID>
+          <String>Dim Program 1</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Ozz5NwpmoXHhCdYNX4PdGBRbgnw=27/06/2015 15:33:1227/06/2015 15:30:16</TimeStamp>
+        <ID>
+          <String>Dim Kegiatan 1</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>ZQHZZVgx0RarcMzL0pzp/zA1QTg=25/06/2015 19:26:1525/06/2015 19:17:123syS1gOFBvtgiiUaFxSZhCZcqSI=25/06/2015 19:17:1225/06/2015 19:17:12</TimeStamp>
+        <ID>
+          <String>OAnggaran</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>RKSE6ndiCSmDvQf6vS8QqGOXgxM=25/06/2015 20:41:2525/06/2015 20:37:28vM59sBca9BJmMKWk6AdcYW+aiiI=25/06/2015 20:37:2825/06/2015 20:37:28</TimeStamp>
+        <ID>
+          <String>OBelanja</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>0xvAk1zQHXVokRPx60wOTjYqv6o=25/06/2015 21:24:0925/06/2015 20:58:48xIUtiXUgDMDVvTKC9jtswHhzLp0=25/06/2015 20:58:4825/06/2015 20:58:48</TimeStamp>
+        <ID>
+          <String>OCapaian</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>b0YTXaqtWyCzY2PqLwltqD6d9IQ=25/06/2015 21:20:1925/06/2015 21:01:04SLYXF1vJd9jwe9MGFwuxwDdAs6s=25/06/2015 21:01:0425/06/2015 21:01:04</TimeStamp>
+        <ID>
+          <String>OIndikator</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>G7JvZko29WIoQyS+p080Vi4488Y=25/06/2015 21:05:2825/06/2015 21:04:03e4NmSyvw7j6W1h4rW5r+9omCeRI=25/06/2015 21:04:0325/06/2015 21:04:03</TimeStamp>
+        <ID>
+          <String>OKerjasama</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>c3mQHG7Q4nO8aSWvN7A0V/GSeDk=27/06/2015 10:39:5027/06/2015 10:36:24RGuqBZsFgqAW0omDfVXWp5EdRdg=27/06/2015 10:36:2427/06/2015 10:36:24</TimeStamp>
+        <ID>
+          <String>OPajak</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>y5HI47Bc+tu8Mtl1+W6xYPKR1bU=27/06/2015 12:18:4427/06/2015 10:57:48XAKuC5uNYPNfKENZf/F24p64Nig=27/06/2015 10:57:4927/06/2015 10:57:48</TimeStamp>
+        <ID>
+          <String>OPerangkat</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>EjBoGbxRW0R5mBNLca8cpty/Qww=27/06/2015 15:33:1127/06/2015 15:30:08ZBJOlwgLqmKPUjmKTcJOz0OKt00=27/06/2015 15:30:1827/06/2015 15:30:15</TimeStamp>
+        <ID>
+          <String>OPK</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>5wyPANrCwYPkpm7IAutpkh+MnJQ=14/06/2015 10:34:5414/06/2015 10:34:50</TimeStamp>
+      <ID>
+        <String>BAPPEDAOLAP</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2015-08-09T15:07:36.333333Z</LastDeployed>
+</DeploymentSnapshot>

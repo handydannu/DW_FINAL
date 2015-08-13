@@ -1,0 +1,187 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="ab49a569-b736-46a5-83fb-1bae9a1891e6" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Belanja</ID>
+  <Name>Dim Belanja</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3499" scrolltop="-4815" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10213" y="12779" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="dim_belanja" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3175" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a0000670c00004d0c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_dim_belanja" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-3499</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-4815</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="e7276232-0c74-4cd5-8dff-05dddf2ddfbe">
+    <DataSourceViewID>OBelanja</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="b84f551d-8f10-48b7-a529-d285d2445b00">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="0472dd54-1bca-4857-be07-94733aa9279f">
+      <ID>Bel Id</ID>
+      <Name>Bel Id</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6392eec5-4c5d-4f62-b588-7b8fdc4480ec">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="49897b63-4990-4f23-b005-93748d3073b0">
+            <TableID>dbo_dim_belanja</TableID>
+            <ColumnID>bel_id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="5723014e-08e7-47db-9aba-bcf3eb76a3b1">
+          <AttributeID>Bel Kd Bidang</AttributeID>
+          <Name>Bel Kd Bidang</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="0a01ac40-5083-4ba9-b4ec-2f9d5a27147a">
+          <AttributeID>Bel Kd Prog</AttributeID>
+          <Name>Bel Kd Prog</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="e159297a-3d8c-4911-b77f-1625139b01b4">
+          <AttributeID>Bel Kd Keg</AttributeID>
+          <Name>Bel Kd Keg</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="eb535276-276a-4953-a538-9b0723ea2803">
+      <ID>Bel Kd Bidang</ID>
+      <Name>Bel Kd Bidang</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="159d8f30-cb00-4eb9-8650-f2bdcf95294f">
+          <DataType>UnsignedTinyInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d6f6dfeb-946c-48e1-9a43-b45b3b3e315b">
+            <TableID>dbo_dim_belanja</TableID>
+            <ColumnID>bel_kd_bidang</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e0c6f21c-0e02-4f60-b2f8-ee4091dc84df">
+      <ID>Bel Kd Prog</ID>
+      <Name>Bel Kd Prog</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="6b2f1c9e-2688-4ca9-a97a-9e5af0eaa0a8">
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="66d37ef0-a849-4102-b781-d99514f144d7">
+            <TableID>dbo_dim_belanja</TableID>
+            <ColumnID>bel_kd_prog</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e8317fe4-d141-4792-8530-aedbba639795">
+      <ID>Bel Kd Keg</ID>
+      <Name>Bel Kd Keg</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="122cd65d-eeda-42db-b6fb-d60457e6e30a">
+          <DataType>SmallInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2862220b-193e-4c82-8518-e04c6ef9742a">
+            <TableID>dbo_dim_belanja</TableID>
+            <ColumnID>bel_kd_keg</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="233dd102-608e-4f19-9ce5-e751054edc28">
+      <ID>Hierarchy</ID>
+      <Name>Hierarchy</Name>
+      <Levels>
+        <Level dwd:design-time-name="278a3611-342e-4169-a12d-de2d3fe0ddae">
+          <ID>Bel Id</ID>
+          <Name>Bel Id</Name>
+          <SourceAttributeID>Bel Id</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="d576733f-5cc6-4f3c-a30d-cf8f387c2904">
+          <ID>Bel Kd Bidang</ID>
+          <Name>Bel Kd Bidang</Name>
+          <SourceAttributeID>Bel Kd Bidang</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="5f4fb567-77d8-489c-9a0f-7f77099802a8">
+          <ID>Bel Kd Keg</ID>
+          <Name>Bel Kd Keg</Name>
+          <SourceAttributeID>Bel Kd Keg</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="628824c6-d98e-48e6-b5d9-22aaca75aa4b">
+          <ID>Bel Kd Prog</ID>
+          <Name>Bel Kd Prog</Name>
+          <SourceAttributeID>Bel Kd Prog</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

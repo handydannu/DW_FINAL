@@ -1,0 +1,211 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="b836c53f-5bb2-42cc-b1b6-ab8068e3160a" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Dim Pendapatan</ID>
+  <Name>Dim Pendapatan</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-3366" scrolltop="-4603" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="10213" y="12779" backcolor="16119285" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="dim_pendapatan" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3440" height="3572" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000a0000700d0000f40d0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_dim_pendapatan" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-3366</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-4603</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="d4a9b487-9740-4b46-aa0e-9e5e262ab27d">
+    <DataSourceViewID>OAnggaran</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="5c54b918-4853-4e14-bb05-9efcc4708b10">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="39fe6e6b-d5e6-4efb-9418-c81e25c69e03">
+      <ID>Pend Id</ID>
+      <Name>Pend Id</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c1c65c4b-b1be-4eb9-9d6e-0c1aff5b10b0">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="4fb2a7e1-9f78-4f2e-9975-db037b1a4603">
+            <TableID>dbo_dim_pendapatan</TableID>
+            <ColumnID>pend_id</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="a5520462-dd17-4e3c-beca-cae52cf40daf">
+          <AttributeID>Pend Kd Bidang</AttributeID>
+          <Name>Pend Kd Bidang</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="f6ba16cc-d56b-4c25-924b-81981ac32d54">
+          <AttributeID>Pend Kd Unit</AttributeID>
+          <Name>Pend Kd Unit</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="960a2da9-ba29-4dc2-8d1a-bf4173d92372">
+          <AttributeID>Pend Satuan</AttributeID>
+          <Name>Pend Satuan</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c9efe004-6a14-4305-8645-34d67c926565">
+          <AttributeID>Pend Nilai</AttributeID>
+          <Name>Pend Nilai</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6a0ab8e1-ed70-4665-9f9d-7ce1fbae58ab">
+      <ID>Pend Kd Bidang</ID>
+      <Name>Pend Kd Bidang</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7b7d160d-76ef-49fd-ba58-38e62df744fc">
+          <DataType>UnsignedTinyInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8590ee25-2d04-49cf-82e9-1fae436fbb91">
+            <TableID>dbo_dim_pendapatan</TableID>
+            <ColumnID>pend_kd_bidang</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="7c364684-be9c-4990-82c3-997243b32a31">
+      <ID>Pend Kd Unit</ID>
+      <Name>Pend Kd Unit</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="157c0ce3-84f1-43e6-9386-761152031630">
+          <DataType>UnsignedTinyInt</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f610c104-7507-4e10-a55a-db18367cb70b">
+            <TableID>dbo_dim_pendapatan</TableID>
+            <ColumnID>pend_kd_unit</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="cd5618da-7cbf-4a71-8c55-e5fd34349d24">
+      <ID>Pend Satuan</ID>
+      <Name>Pend Satuan</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c102b008-3871-46e6-b57e-769ac853a1be">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d1409e2b-2d98-4bd8-9afb-23491904d6e9">
+            <TableID>dbo_dim_pendapatan</TableID>
+            <ColumnID>pend_satuan</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="b5041a01-764a-464a-a427-8175d2e4cc31">
+      <ID>Pend Nilai</ID>
+      <Name>Pend Nilai</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="a97d4d83-f8ff-4818-9849-9a3218d46db1">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="8ddcb63e-ac23-4424-8d4e-a52cec0fdfa6">
+            <TableID>dbo_dim_pendapatan</TableID>
+            <ColumnID>pend_nilai</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="e2a4b923-4784-43ea-ab92-0644bdb5a026">
+      <ID>Hierarchy</ID>
+      <Name>Hierarchy</Name>
+      <Levels>
+        <Level dwd:design-time-name="74dab4a0-bdfc-436f-81b8-e918f5ee55e7">
+          <ID>Pend Id</ID>
+          <Name>Pend Id</Name>
+          <SourceAttributeID>Pend Id</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="a278746a-29c8-4738-8188-8addce554e0a">
+          <ID>Pend Kd Bidang</ID>
+          <Name>Pend Kd Bidang</Name>
+          <SourceAttributeID>Pend Kd Bidang</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="322f4501-f526-4d2d-b03c-02f78608cd1a">
+          <ID>Pend Kd Unit</ID>
+          <Name>Pend Kd Unit</Name>
+          <SourceAttributeID>Pend Kd Unit</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="8f449886-a011-4d20-a347-5e1b3204e71a">
+          <ID>Pend Satuan</ID>
+          <Name>Pend Satuan</Name>
+          <SourceAttributeID>Pend Satuan</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="1e3239fa-bc38-4a86-b944-6c09d82bae1b">
+          <ID>Pend Nilai</ID>
+          <Name>Pend Nilai</Name>
+          <SourceAttributeID>Pend Nilai</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

@@ -1,0 +1,147 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="ff6bf1c5-a7eb-456f-ba3c-8d158d063746" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>OPerangkat</ID>
+  <Name>OPerangkat</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>BAPPEDADW</DataSourceID>
+  <Schema>
+    <xs:schema id="OPerangkat" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="OPerangkat" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="4e166bf1-3794-489d-a904-c8ac007cfeda">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_fakta_perangkat" msprop:design-time-name="fcba0fd5-1649-4354-8c02-3fe99e39aa66" msprop:DbTableName="fakta_perangkat" msprop:FriendlyName="fakta_perangkat" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="fper_tahun" msprop:design-time-name="dcf1c446-376e-4051-86c8-9c97bf63cd75" msprop:DbColumnName="fper_tahun" msprop:FriendlyName="fper_tahun" type="xs:int" />
+                  <xs:element name="fper_id_subunit" msprop:design-time-name="29c3bb59-d5f3-441d-be9f-dce1cb92bc6a" msprop:DbColumnName="fper_id_subunit" msprop:FriendlyName="fper_id_subunit" type="xs:int" />
+                  <xs:element name="fper_id_unit" msprop:design-time-name="370977b4-3e25-4f68-82cf-bd8877a50dc7" msprop:DbColumnName="fper_id_unit" msprop:FriendlyName="fper_id_unit" type="xs:int" />
+                  <xs:element name="fper_nama" msprop:design-time-name="3eaafb28-d255-4dc1-a386-f5f2f67a7230" msprop:DbColumnName="fper_nama" msprop:FriendlyName="fper_nama" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="fper_angg" msprop:design-time-name="e866d97a-4f3a-4dbd-bf30-929034a0e0f5" msprop:DbColumnName="fper_angg" msprop:FriendlyName="fper_angg" type="xs:decimal" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_dim_subunit" msprop:design-time-name="9b516a27-fa09-4c1a-91c6-4443a921075d" msprop:DbTableName="dim_subunit" msprop:FriendlyName="dim_subunit" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="subu_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="112feb9f-a826-45a5-a0bb-0aea4c8fc1e5" msprop:DbColumnName="subu_id" msprop:FriendlyName="subu_id" type="xs:int" />
+                  <xs:element name="subu_kd_unit" msprop:design-time-name="6b26bfa1-7b13-40c0-9e8d-832f2cb52e26" msprop:DbColumnName="subu_kd_unit" msprop:FriendlyName="subu_kd_unit" type="xs:unsignedByte" />
+                  <xs:element name="subu_nama" msprop:design-time-name="d9f5d30f-46c4-4955-a601-bbfe782896f4" msprop:DbColumnName="subu_nama" msprop:FriendlyName="subu_nama" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="subu_nip" msprop:design-time-name="274de42c-e9d4-404b-8e53-65c1c5d96adb" msprop:DbColumnName="subu_nip" msprop:FriendlyName="subu_nip" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="21" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="subu_jabatan" msprop:design-time-name="955ad3bd-11af-4883-9d9a-9ddea5f13b5e" msprop:DbColumnName="subu_jabatan" msprop:FriendlyName="subu_jabatan" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="75" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_dim_waktu" msprop:design-time-name="ecbfa0be-a687-4bf7-a4d0-9e2d4b36d5e0" msprop:DbTableName="dim_waktu" msprop:FriendlyName="dim_waktu" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="wkt_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="9db43c34-8ef9-463b-85f0-a1890c1342b4" msprop:DbColumnName="wkt_id" msprop:FriendlyName="wkt_id" type="xs:int" />
+                  <xs:element name="wkt_detail" msprop:design-time-name="34951fd7-beac-49a1-ad35-86f6aee15366" msprop:DbColumnName="wkt_detail" msprop:FriendlyName="wkt_detail" type="xs:short" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_dim_unit" msprop:design-time-name="f724434d-4cff-4b5c-a65c-1aa99170c066" msprop:DbTableName="dim_unit" msprop:FriendlyName="dim_unit" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="unit_id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="0b035fa4-c404-4c20-bccd-bd2aef6260b4" msprop:DbColumnName="unit_id" msprop:FriendlyName="unit_id" type="xs:int" />
+                  <xs:element name="unit_kd_unit" msprop:design-time-name="bd8c2470-cc23-4c4e-b516-f287dcbf7b23" msprop:DbColumnName="unit_kd_unit" msprop:FriendlyName="unit_kd_unit" type="xs:unsignedByte" />
+                  <xs:element name="unit_nama" msprop:design-time-name="7f665c37-1de2-454a-906a-06840cf01658" msprop:DbColumnName="unit_nama" msprop:FriendlyName="unit_nama">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="255" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_dim_subunit" />
+          <xs:field xpath="subu_id" />
+        </xs:unique>
+        <xs:unique name="dbo_dim_waktu_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_dim_waktu" />
+          <xs:field xpath="wkt_id" />
+        </xs:unique>
+        <xs:unique name="dbo_dim_unit_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_dim_unit" />
+          <xs:field xpath="unit_id" />
+        </xs:unique>
+        <xs:keyref name="FK_fakta_perangkat_dim_subunit" refer="Constraint1">
+          <xs:selector xpath=".//dbo_fakta_perangkat" />
+          <xs:field xpath="fper_id_subunit" />
+        </xs:keyref>
+        <xs:keyref name="FK_fakta_perangkat_dim_unit" refer="dbo_dim_unit_Constraint1">
+          <xs:selector xpath=".//dbo_fakta_perangkat" />
+          <xs:field xpath="fper_id_unit" />
+        </xs:keyref>
+        <xs:keyref name="FK_fakta_perangkat_dim_waktu" refer="dbo_dim_waktu_Constraint1">
+          <xs:selector xpath=".//dbo_fakta_perangkat" />
+          <xs:field xpath="fper_tahun" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <OPerangkat xmlns="" />
+  </Schema>
+</DataSourceView>
