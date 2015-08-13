@@ -1,0 +1,35 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+             xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core" 
+             xmlns:dxpg="http://schemas.devexpress.com/winfx/2008/xaml/pivotgrid" xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors" 
+             xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm"
+             x:Class="BAPPEDADW.Analisis.OBelanja"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <UserControl.Resources>
+        <dx:PivotOlapDataSource x:Key="PivotOlapDataSource" Cube="OBelanja" Catalog="BAPPEDAOLAP" ConnectionTimeout="60" LocaleIdentifier="33" Password="dannudannu" Provider="MSOLAP" QueryTimeout="30" Server="DANNU" UserId="dannu">
+            <dx:DesignDataManager.DesignData>
+                <dx:DesignDataSettings RowCount="5"/>
+            </dx:DesignDataManager.DesignData>
+        </dx:PivotOlapDataSource>
+    </UserControl.Resources>
+    <Grid>
+        <dxpg:PivotGridControl Name="PivotOBelanja"  HorizontalAlignment="Left" VerticalAlignment="Top" Height="450" OlapConnectionString="{Binding ConnectionString, Source={StaticResource PivotOlapDataSource}}" OlapDataProvider="OleDb" CellSelectedBackground="#FF59B050" PrintFilterHeaders="False" PrintLayoutMode="MultiplePagesLayout" RowTotalsLocation="Near" PrintHeadersOnEveryPage="True" PrintColumnHeaders="False" PrintDataHeaders="False" ShowColumnTotals="False" ColumnTotalsLocation="Near" ShowColumnGrandTotalHeader="False" ShowColumnGrandTotals="False" ShowRowTotals="False">
+            <dxpg:PivotGridControl.Fields>
+                <dxpg:PivotGridField Area="DataArea" Caption="Nilai Belanja" FieldName="[Measures].[Fbel Nilai]"/>
+                <dxpg:PivotGridField Area="ColumnArea" Caption="Tahun" FieldName="[Dim Waktu].[Wkt Detail].[Wkt Detail]"/>
+                <dxpg:PivotGridField Area="RowArea" Caption="Kode Bidang" FieldName="[Dim Belanja].[Bel Kd Bidang].[Bel Kd Bidang]"/>
+                <dxpg:PivotGridField Area="DataArea" Caption="Satuan" FieldName="[Measures].[Fbel Satuan]"/>
+                <dxpg:PivotGridField Area="DataArea" Caption="Total" FieldName="[Measures].[Fbel Total]"/>
+                <dxpg:PivotGridField Area="RowArea" Caption="Kode Kegiatan" FieldName="[Dim Kegiatan].[Keg Kd Keg].[Keg Kd Keg]"/>
+                <dxpg:PivotGridField Area="RowArea" Caption="Kode Program" FieldName="[Dim Belanja].[Bel Kd Prog].[Bel Kd Prog]"/>
+                <dxpg:PivotGridField Area="RowArea" Caption="Uraian" FieldName="[Dim Kegiatan].[Keg Uraian].[Keg Uraian]"/>
+            </dxpg:PivotGridControl.Fields>
+        </dxpg:PivotGridControl>
+        <Button Content="Simpan Analisis" HorizontalAlignment="Left" Height="29" Margin="0,455,0,-184" VerticalAlignment="Top" Width="134" Click="Button_Click"/>
+    </Grid>
+</UserControl>

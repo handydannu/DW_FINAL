@@ -1,0 +1,23 @@
+﻿<mui:ModernWindow x:Class="BAPPEDADW.TEtl"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+        Title="EKSTRAK DATA" IsTitleVisible="True"
+        WindowStartupLocation="CenterScreen"
+        ContentSource="/ETL/ETL.xaml"                  
+        Width="1000"
+        ResizeMode="CanResizeWithGrip" >
+
+    <mui:ModernWindow.MenuLinkGroups>
+        <mui:LinkGroup>
+            <mui:LinkGroup.Links>
+                <mui:Link DisplayName="EKSTRAK DATA" Source="/ETL/ETL.xaml" />
+                <mui:Link DisplayName="KEMBALI KE BERANDA" Source="/Pages/Konfirmasi.xaml" />
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+    </mui:ModernWindow.MenuLinkGroups>
+
+    <mui:ModernWindow.TitleLinks>
+        <mui:Link DisplayName="PENGATURAN" Source="/Pages/SettingsPage.xaml" />
+    </mui:ModernWindow.TitleLinks>
+</mui:ModernWindow>

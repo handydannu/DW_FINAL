@@ -1,0 +1,31 @@
+﻿<UserControl x:Class="BAPPEDADW.Pages.Dimensi"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300"  
+             >
+    
+        <Grid Style="{StaticResource ContentRoot}">
+            <mui:ModernTab Layout="List">
+            <mui:ModernTab.Links>
+                <mui:Link DisplayName="DIMENSI BELANJA" Source="/Dimensi/DBelanja.xaml"  />
+                <mui:Link DisplayName="DIMENSI BIDANG" Source="/Dimensi/DBidang.xaml"  />
+                <mui:Link DisplayName="DIMENSI CAPAIAN" Source="/Dimensi/DCapaian.xaml"  />
+                <mui:Link DisplayName="DIMENSI INDIKATOR" Source="/Dimensi/DIndikator.xaml"  />
+                <mui:Link DisplayName="DIMENSI KEGIATAN" Source="/Dimensi/DKegiatan.xaml"  />
+                <mui:Link DisplayName="DIMENSI KONTRAK" Source="/Dimensi/DKontrak.xaml"  />
+                <mui:Link DisplayName="DIMENSI PAJAK" Source="/Dimensi/DPajak.xaml"  />
+                <mui:Link DisplayName="DIMENSI PANJAR" Source="/Dimensi/DPanjar.xaml"  />
+                <mui:Link DisplayName="DIMENSI PEMBIAYAAN" Source="/Dimensi/DPembiayaan.xaml"  />
+                <mui:Link DisplayName="DIMENSI PENDAPATAN" Source="/Dimensi/DPendapatan.xaml"  />
+                <mui:Link DisplayName="DIMENSI PROGRAM" Source="/Dimensi/DProgram.xaml"  />
+                <mui:Link DisplayName="DIMENSI SUBUNIT" Source="/Dimensi/DSubunit.xaml"  />
+                <mui:Link DisplayName="DIMENSI UNIT" Source="/Dimensi/DUnit.xaml"  />
+                <mui:Link DisplayName="DIMENSI WAKTU" Source="/Dimensi/DWaktu.xaml"  />
+            </mui:ModernTab.Links>
+            </mui:ModernTab>
+        </Grid>
+</UserControl>

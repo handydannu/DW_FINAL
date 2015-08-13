@@ -1,0 +1,22 @@
+﻿<mui:ModernWindow x:Class="BAPPEDADW.TDimensi"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+        Title="LISTING TABEL DIMENSI" IsTitleVisible="True"                 
+        Width="1000"
+        WindowStartupLocation="CenterScreen"
+        ContentSource="/Dimensi/Dimensi.xaml">
+
+    <mui:ModernWindow.MenuLinkGroups>
+        <mui:LinkGroup>
+            <mui:LinkGroup.Links>
+                <mui:Link DisplayName="TABEL DIMENSI" Source="/Dimensi/Dimensi.xaml" />
+                <mui:Link DisplayName="KEMBALI KE BERANDA" Source="/Pages/Konfirmasi.xaml" />
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+    </mui:ModernWindow.MenuLinkGroups>
+    
+    <mui:ModernWindow.TitleLinks>
+        <mui:Link DisplayName="PENGATURAN" Source="/Pages/SettingsPage.xaml" />
+    </mui:ModernWindow.TitleLinks>
+</mui:ModernWindow>

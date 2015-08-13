@@ -1,0 +1,33 @@
+﻿<mui:ModernWindow x:Class="BAPPEDADW.TDepan"
+                  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+                  xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+                  xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+                  mc:Ignorable="d"
+                  Height="200" Width="960"
+                  Title="BAPPEDA DATA WAREHOUSE" 
+                  WindowStartupLocation="CenterScreen"
+                  ResizeMode="CanMinimize"
+                  Style="{StaticResource BlankWindow}">
+    <Grid>
+        <Button Padding="0" Name="AButton"  Height="100" Width="200" Margin="36,32,716,37" Click="ETLklik">
+            <Image Source="Gambar/ETL.png"/>
+        </Button>
+        <Button Padding="0" Name="BButton"  Height="100" Width="200" Margin="651,32,101,37" Click="OlapKlik">
+            <Image Source="Gambar/OLAP.png"/>
+        </Button>
+        <Button Padding="0" Name="CButton"  Height="100" Width="200" Margin="446,32,306,37" Click="FaktaKlik">
+            <Image Source="Gambar/FAKTA.png"/>
+        </Button>
+        <Button Padding="0" Name="DButton" Height="100" Width="200" Margin="241,32,511,37" Click="DimensiKlik">
+            <Image Source="Gambar/DIMENSI.png"/>
+        </Button>
+        <Label Content="HALAMAN UTAMA BAPPEDA DATA WAREHOUSE" Margin="36,10,567,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Button Content="KELUAR" Name="BKeluar"  HorizontalAlignment="Left" Margin="741,0,0,0" VerticalAlignment="Top" Width="100" Click="BKeluar_Click"/>
+
+
+    </Grid>
+
+</mui:ModernWindow>
+    

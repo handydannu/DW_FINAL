@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="BAPPEDADW.Analisis.Olap"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+
+    <Grid Style="{StaticResource ContentRoot}">
+        <mui:ModernTab Layout="List">
+            <mui:ModernTab.Links>
+                <mui:Link DisplayName="OLAP ANGGARAN" Source="/Analisis/OMoney.xaml"  />
+                <mui:Link DisplayName="OLAP BELANJA" Source="/Analisis/OBelanja.xaml"  />
+                <mui:Link DisplayName="OLAP PEMBIAYAAN DAN PENDAPATAN" Source="/Analisis/OAnggaran.xaml"  />
+                <mui:Link DisplayName="OLAP CAPAIAN" Source="/Analisis/OCapaian.xaml"  />
+                <mui:Link DisplayName="OLAP INDIKATOR" Source="/Analisis/OIndikator.xaml"  />
+                <mui:Link DisplayName="OLAP PROGRAM DAN KEGIATAN" Source="/Analisis/OPK.xaml"  />
+                <mui:Link DisplayName="OLAP KERJASAMA" Source="/Analisis/OKerjasama.xaml"  />
+                <mui:Link DisplayName="OLAP PAJAK" Source="/Analisis/OPajak.xaml"  />
+                <mui:Link DisplayName="OLAP PERANGKAT" Source="/Analisis/OPerangkat.xaml"  />
+            </mui:ModernTab.Links>
+        </mui:ModernTab>
+    </Grid>
+</UserControl>

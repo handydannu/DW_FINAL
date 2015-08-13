@@ -1,0 +1,31 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+             xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+             xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core" xmlns:dxpg="http://schemas.devexpress.com/winfx/2008/xaml/pivotgrid" x:Class="BAPPEDADW.Analisis.OPerangkat"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <UserControl.Resources>
+        <dx:PivotOlapDataSource x:Key="PivotOlapDataSource" Cube="OPerangkat" Catalog="BAPPEDAOLAP" ConnectionTimeout="60" LocaleIdentifier="1033" Password="dannudannu" Provider="MSOLAP" QueryTimeout="30" Server="DANNU" UserId="dannu">
+            <dx:DesignDataManager.DesignData>
+                <dx:DesignDataSettings RowCount="5"/>
+            </dx:DesignDataManager.DesignData>
+        </dx:PivotOlapDataSource>
+    </UserControl.Resources>
+    <Grid>
+
+        <dxpg:PivotGridControl Name="PivotOPerangkat" HorizontalAlignment="Left" VerticalAlignment="Top" Height="450" OlapConnectionString="{Binding ConnectionString, Source={StaticResource PivotOlapDataSource}}" OlapDataProvider="OleDb" PrintColumnHeaders="False" PrintHeadersOnEveryPage="True" PrintLayoutMode="MultiplePagesLayout" RowTotalsLocation="Near" ColumnTotalsLocation="Near" ShowColumnGrandTotalHeader="False" ShowColumnGrandTotals="False" ShowColumnTotals="False" ShowRowTotals="False">
+            <dxpg:PivotGridControl.Fields>
+                <dxpg:PivotGridField Area="ColumnArea" Caption="Tahun" FieldName="[Dim Waktu 1].[Wkt Detail].[Wkt Detail]"/>
+                <dxpg:PivotGridField Area="RowArea" Caption="Kode SubUnit" FieldName="[Dim Subunit].[Subu Kd Unit].[Subu Kd Unit]"/>
+                <dxpg:PivotGridField Area="RowArea" Caption="ID Unit" FieldName="[Dim Unit].[Unit Id].[Unit Id]"/>
+                <dxpg:PivotGridField Area="DataArea" Caption="Penggunaan Anggaran" FieldName="[Measures].[Fper Angg]"/>
+                <dxpg:PivotGridField Area="RowArea" Caption="Kode Unit" FieldName="[Dim Unit].[Unit Kd Unit].[Unit Kd Unit]"/>
+            </dxpg:PivotGridControl.Fields>
+        </dxpg:PivotGridControl>
+        <Button Content="Simpan Analisis" HorizontalAlignment="Left" Height="29" Margin="0,455,0,-184" VerticalAlignment="Top" Width="134" Click="Button_Click"/>
+    </Grid>
+</UserControl>
