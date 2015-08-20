@@ -10,7 +10,8 @@
         <ScrollViewer>
             <StackPanel MinWidth="200">
                 <Label Content="EKSTRAK DATA" FontWeight="Bold" HorizontalAlignment="Center" Padding="20" FontSize="15"/>
-                <Button Padding="10" Content="EKSTRAK" FontSize="20" Width="139" FontWeight="ExtraBlack" Click="Button_Click"/>
+                <Button Name="eks" Padding="10" Content="EKSTRAK" FontSize="20" Width="139" FontWeight="ExtraBlack" Click="Button_Click"/>
+                <TextBlock Name="lblstatus" Text="" FontSize="15" FontWeight="Bold" HorizontalAlignment="Center" Padding="20"/>
             </StackPanel>
         </ScrollViewer>
     </Grid>

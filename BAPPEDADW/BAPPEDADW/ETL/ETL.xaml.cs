@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using FirstFloor.ModernUI.Windows.Controls;
+using Microsoft.SqlServer.Dts.Runtime; 
 
 namespace BAPPEDADW.ETL
 {
@@ -21,7 +22,7 @@ namespace BAPPEDADW.ETL
     /// </summary>
     public partial class ETL : UserControl
     {
-        ProsesETL package = new ProsesETL();
+        
         public ETL()
         {
             InitializeComponent();
@@ -29,8 +30,32 @@ namespace BAPPEDADW.ETL
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            ModernDialog.ShowMessage("EKSTRAK DATA ?", "INFORMASI !", MessageBoxButton.OK);
-            package.Ekstrak();           
+
+            eks.Visibility = Visibility.Hidden;
+            lblstatus.Text = "EKSTRAK SEDANG DALAM PROSES MOHON TUNGGU SEBENTAR !";
+
+            MessageBoxButton btn = MessageBoxButton.YesNo;
+            var result = ModernDialog.ShowMessage("EKSTRAK DATA AKAN MENGHAPUS DATA SEBELUMNYA ! \n LANJUTKAN ?", "INFORMASI", btn);
+            if (result.ToString() == "Yes")
+            {
+
+                Microsoft.SqlServer.Dts.Runtime.Application myApplication = new Microsoft.SqlServer.Dts.Runtime.Application();
+
+                // Load package from file system (use LoadFromSqlServer for SQL Server based packages)
+                Package myPackage = myApplication.LoadPackage(@"D:\github\DW_FINAL\BAPPEDADW\BAPPEDADW\Analisis\Package.dtsx", null);
+
+                // Execute package
+                DTSExecResult myResult = myPackage.Execute();
+
+                lblstatus.Text = "HASIL EKSTRAKSI : " + myResult.ToString();
+
+                // Show the execution result
+            }
+
+
+            eks.Visibility = Visibility.Visible;   
+
+
         }
 
        

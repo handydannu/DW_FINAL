@@ -13,10 +13,7 @@
     <!-- custom theme resources-->
     <Rectangle x:Key="WindowBackgroundContent" x:Shared="false">
         <Rectangle.Fill>
-            <LinearGradientBrush EndPoint="0,1" Opacity=".2">
-                <GradientStop Offset="0" Color="Transparent" />
-                <GradientStop Offset="1" Color="{DynamicResource AccentColor}" />
-            </LinearGradientBrush>
+            <ImageBrush Opacity="0.5" ImageSource="../Gambar/logo.jpg" Stretch="Uniform"  AlignmentX="Left" AlignmentY="Top" />
         </Rectangle.Fill>
     </Rectangle>
 </ResourceDictionary>

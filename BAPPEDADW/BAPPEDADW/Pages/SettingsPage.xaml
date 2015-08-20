@@ -12,7 +12,6 @@
             <mui:ModernTab.Links>
                 <mui:Link DisplayName="WARNA TEMA" Source="/Pages/Settings/Appearance.xaml" />
                 <mui:Link DisplayName="HAK AKSES" Source="/Master/Mdata.xaml" />
-                <mui:Link DisplayName="KOSONGKAN DATA WAREHOUSE" Source="/Master/MClearData.xaml" />
                 <mui:Link DisplayName="PENGEMBANG" Source="/Pages/Settings/About.xaml" />
             </mui:ModernTab.Links>
         </mui:ModernTab>
