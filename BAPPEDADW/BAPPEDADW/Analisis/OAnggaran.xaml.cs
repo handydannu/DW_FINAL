@@ -30,8 +30,7 @@ namespace BAPPEDADW.Analisis
         {
             PrintableControlLink cetak = new PrintableControlLink(PivotOAnggaran);
             cetak.PageHeaderTemplate = (DataTemplate)TryFindResource("print_header");
-            cetak.PageHeaderData = "TEST";
-           
+            cetak.PageHeaderData = "BADAN PERENCANAAN PEMBANGUNAN DAERAH KABUPATEN BUNGO\n             LAPORAN PENDAPATAN DAN PEMBIAYAAN ANGGARAN";           
             cetak.PaperKind = System.Drawing.Printing.PaperKind.A4;
             cetak.Landscape = true;
            // cetak.CreateDocument(true);

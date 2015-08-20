@@ -14,15 +14,28 @@
                 <dx:DesignDataSettings RowCount="5"/>
             </dx:DesignDataManager.DesignData>
         </dx:PivotOlapDataSource>
+        <DataTemplate x:Key="print_header">
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="200"></ColumnDefinition>
+                    <ColumnDefinition Width="600"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <dxe:ImageEdit  Grid.Column="0" Height="100" Width="150" Source="../Gambar/logo.jpg" IsPrintingMode="True"></dxe:ImageEdit>
+                <dxe:TextEdit Grid.Column="1" FontSize="16" FontWeight="Bold" Grid.Row="0" IsPrintingMode="True" EditValue="{Binding Path=Content, Mode=OneWay}"></dxe:TextEdit>
+            </Grid>
+        </DataTemplate>
+
     </UserControl.Resources>
     <Grid>
-        <dxpg:PivotGridControl Name="PivotOOmoney"  HorizontalAlignment="Left" VerticalAlignment="Top" Height="450" Margin="0,0,18,24" OlapConnectionString="{Binding ConnectionString, Source={StaticResource PivotOlapDataSource}}" OlapDataProvider="OleDb" PrintHeadersOnEveryPage="True" PrintDataHeaders="False" PrintLayoutMode="MultiplePagesLayout" RowTotalsLocation="Near" ColumnTotalsLocation="Near" ShowColumnTotals="False" ShowColumnGrandTotals="False" ShowRowTotals="False">
+        <dxpg:PivotGridControl Name="PivotOOmoney" AutoExpandGroups="True" HorizontalAlignment="Left" VerticalAlignment="Top" Height="450" Margin="0,0,18,24" OlapConnectionString="{Binding ConnectionString, Source={StaticResource PivotOlapDataSource}}" OlapDataProvider="OleDb" PrintHeadersOnEveryPage="True" PrintDataHeaders="False" PrintLayoutMode="MultiplePagesLayout" RowTotalsLocation="Near" ColumnTotalsLocation="Near" ShowColumnTotals="False" ShowColumnGrandTotals="False" ShowRowTotals="False">
             <dxpg:PivotGridControl.Fields>
-                <dxpg:PivotGridField Area="DataArea" Caption="Anggaran Keluar" FieldName="[Measures].[Fang Pemb Total]"/>
+                <dxpg:PivotGridField Area="DataArea" Caption="Anggaran Keluar" FieldName="[Measures].[Fang Pemb Total]" CellFormat="Rp. {0:n2}"/>
                 <dxpg:PivotGridField Area="ColumnArea" Caption="Tahun" FieldName="[Dim Waktu].[Wkt Detail].[Wkt Detail]"/>
                 <dxpg:PivotGridField Area="RowArea" Caption="Kode Bidang" FieldName="[Dim Bidang].[Bid Id].[Bid Id]"/>
                 <dxpg:PivotGridField Area="RowArea" Caption="Kode Kegiatan" FieldName="[Dim Pendapatan].[Pend Id].[Pend Id]"/>
-                <dxpg:PivotGridField Area="DataArea" Caption="Anggaran Masuk" FieldName="[Measures].[Fang Pend Total]"/>
+                <dxpg:PivotGridField Area="DataArea" Caption="Anggaran Masuk" FieldName="[Measures].[Fang Pend Total]" CellFormat="Rp. {0:n2}"/>
             </dxpg:PivotGridControl.Fields>
         </dxpg:PivotGridControl>
         <Button Content="Simpan Analisis" HorizontalAlignment="Left" Height="29" Margin="0,455,0,-184" VerticalAlignment="Top" Width="134" Click="Button_Click"/>

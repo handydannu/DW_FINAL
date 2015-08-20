@@ -17,7 +17,7 @@
         </dx:PivotOlapDataSource>
     </UserControl.Resources>
     <Grid>
-        <dxpg:PivotGridControl Name="PivotOPK" HorizontalAlignment="Left" VerticalAlignment="Top" Height="450" OlapConnectionString="{Binding ConnectionString, Source={StaticResource PivotOlapDataSource}}" OlapDataProvider="OleDb" RowTreeWidth="50" Margin="0,0,0,-150" Grid.RowSpan="2" RowTreeOffset="20" RowTreeHeight="20" RowTreeMinWidth="10" PrintLayoutMode="MultiplePagesLayout" PrintColumnHeaders="False" PrintDataHeaders="False" ColumnTotalsLocation="Near" ShowColumnGrandTotalHeader="False" ShowColumnGrandTotals="False" ShowColumnTotals="False" RowTotalsLocation="Near" ShowRowTotals="False">
+        <dxpg:PivotGridControl Name="PivotOPK" AutoExpandGroups="True" HorizontalAlignment="Left" VerticalAlignment="Top" Height="450" OlapConnectionString="{Binding ConnectionString, Source={StaticResource PivotOlapDataSource}}" OlapDataProvider="OleDb" RowTreeWidth="50" Margin="0,0,0,-150" Grid.RowSpan="2" RowTreeOffset="20" RowTreeHeight="20" RowTreeMinWidth="10" PrintLayoutMode="MultiplePagesLayout" PrintColumnHeaders="False" PrintDataHeaders="False" ColumnTotalsLocation="Near" ShowColumnGrandTotalHeader="False" ShowColumnGrandTotals="False" ShowColumnTotals="False" RowTotalsLocation="Near" ShowRowTotals="False">
             <dxpg:PivotGridControl.Background>
                 <LinearGradientBrush EndPoint="0.5,0.992" SpreadMethod="Pad" StartPoint="0.5,0.003">
                     <GradientStop Color="#FFB0D3FF" Offset="0"/>
@@ -25,7 +25,7 @@
                 </LinearGradientBrush>
             </dxpg:PivotGridControl.Background>
             <dxpg:PivotGridControl.Fields>
-                <dxpg:PivotGridField Area="DataArea" Caption="Anggaran" FieldName="[Measures].[Fpk Anggaran]"/>
+                <dxpg:PivotGridField Area="DataArea" Caption="Anggaran" FieldName="[Measures].[Fpk Anggaran]" CellFormat="Rp. {0:n2}"/>
                 <dxpg:PivotGridField Area="ColumnArea" Caption="Tahun" FieldName="[Dim Waktu 2].[Wkt Detail].[Wkt Detail]"/>
                 <dxpg:PivotGridField Area="RowArea" Caption="Kode Bidang" FieldName="[Dim Bidang 1].[Bid Kd Bidang].[Bid Kd Bidang]"/>
                 <dxpg:PivotGridField Area="RowArea" Caption="Kode Kegiatan" FieldName="[Dim Kegiatan 1].[Keg Kd Keg].[Keg Kd Keg]"/>

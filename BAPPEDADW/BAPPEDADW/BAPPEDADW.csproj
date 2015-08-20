@@ -24,7 +24,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationRevision>3</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -157,6 +157,9 @@
     <Compile Include="Analisis\OPK.xaml.cs">
       <DependentUpon>OPK.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Analisis\OUtama.xaml.cs">
+      <DependentUpon>OUtama.xaml</DependentUpon>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -202,6 +205,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Analisis\OPK.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Analisis\OUtama.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -479,7 +486,12 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="Analisis\Package.dtsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="BAPPEDADW_TemporaryKey.pfx" />
     <None Include="packages.config" />
     <EmbeddedResource Include="Properties\Licenses.licx" />

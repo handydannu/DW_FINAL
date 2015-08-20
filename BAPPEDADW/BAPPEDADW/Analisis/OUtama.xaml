@@ -1,0 +1,49 @@
+﻿<UserControl x:Class="BAPPEDADW.Analisis.OUtama"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mui="http://firstfloorsoftware.com/ModernUI" 
+             xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
+             xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+             xmlns:dxpg="http://schemas.devexpress.com/winfx/2008/xaml/pivotgrid"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <UserControl.Resources>
+        <dx:PivotOlapDataSource x:Key="PivotOlapDataSource" Cube="OAnggaran" Catalog="BAPPEDAOLAP" ConnectionTimeout="60" LocaleIdentifier="1033" Password="dannudannu" Provider="MSOLAP" QueryTimeout="30" Server="DANNU" UserId="dannu">
+            <dx:DesignDataManager.DesignData>
+                <dx:DesignDataSettings RowCount="5"/>
+            </dx:DesignDataManager.DesignData>
+        </dx:PivotOlapDataSource>
+
+        <DataTemplate x:Key="print_header">
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="200"></ColumnDefinition>
+                    <ColumnDefinition Width="600"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <dxe:ImageEdit  Grid.Column="0" Height="100" Width="150" Source="../Gambar/logo.jpg" IsPrintingMode="True"></dxe:ImageEdit>
+                <dxe:TextEdit Grid.Column="1" FontSize="16" FontWeight="Bold" Grid.Row="0" IsPrintingMode="True" EditValue="{Binding Path=Content, Mode=OneWay}"></dxe:TextEdit>
+            </Grid>
+        </DataTemplate>
+
+    </UserControl.Resources>
+
+    <Grid>
+
+        <dxpg:PivotGridControl x:Name="PivotOAnggaran" HorizontalAlignment="Left" VerticalAlignment="Top" Height="450" RowTotalsLocation="Near" AutoExpandGroups="True" ShowColumnGrandTotalHeader="False" ShowColumnTotals="False" ShowRowTotals="False" PrintColumnHeaders="False" PrintDataHeaders="False" PrintLayoutMode="MultiplePagesLayout" OlapConnectionString="{Binding ConnectionString, Source={StaticResource PivotOlapDataSource}}" OlapDataProvider="OleDb" PrintHeadersOnEveryPage="True" PrintFilterHeaders="False" PrintRowHeaders="False" PrintInsertPageBreaks="False" >
+            <dxpg:PivotGridControl.Fields>
+                <dxpg:PivotGridField Area="DataArea" Caption="Nilai Pembiayaan" FieldName="[Measures].[Fang Nilai]" CellFormat="Rp. {0:n2}"/>
+                <dxpg:PivotGridField Area="ColumnArea" Caption="Tahun" FieldName="[Dim Waktu].[Wkt Detail].[Wkt Detail]"/>
+                <dxpg:PivotGridField Area="RowArea" Caption="Kode Bidang" FieldName="[Dim Bidang].[Bid Kd Bidang].[Bid Kd Bidang]"/>
+                <dxpg:PivotGridField Area="DataArea" Caption="Total Pembiayaan" FieldName="[Measures].[Fang Pemb Total]" CellFormat="Rp. {0:n2}"/>
+                <dxpg:PivotGridField Area="DataArea" Caption="Nilai Pendapatan" FieldName="[Measures].[Fang Pend Nilai]" CellFormat="Rp. {0:n2}"/>
+                <dxpg:PivotGridField Area="DataArea" Caption="Total Pendapatan" FieldName="[Measures].[Fang Pend Total]" CellFormat="Rp. {0:n2}"/>
+            </dxpg:PivotGridControl.Fields>
+        </dxpg:PivotGridControl>
+        <Button Content="Simpan Analisis" HorizontalAlignment="Left" Height="29" Margin="0,455,0,-184" VerticalAlignment="Top" Width="134" Click="Button_Click"/>
+
+    </Grid>
+</UserControl>

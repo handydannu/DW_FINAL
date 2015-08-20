@@ -53,7 +53,6 @@ namespace BAPPEDADW
                 else
                 {
                     var login_window = Window.GetWindow(this);
-                    sql.init_dw();
 
                     TDepan a = new TDepan();
                     a.Show();

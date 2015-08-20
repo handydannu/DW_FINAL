@@ -20,14 +20,12 @@
 
             <Grid>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="50"></ColumnDefinition>
-                    <ColumnDefinition Width="1*"></ColumnDefinition>
+                    <ColumnDefinition Width="200"></ColumnDefinition>
+                    <ColumnDefinition Width="600"></ColumnDefinition>
                 </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="50"></RowDefinition>
-                </Grid.RowDefinitions>
-                <dxe:ImageEdit  Grid.Column="0" Grid.Row="0" Source="../Gambar/logo.jpg" IsPrintingMode="True"></dxe:ImageEdit>
-                <dxe:TextEdit Grid.Column="1" Grid.Row="0" IsPrintingMode="True" EditValue="{Binding Path=Content, Mode=OneWay}"></dxe:TextEdit>
+                
+                <dxe:ImageEdit  Grid.Column="0" Height="100" Width="150" Source="../Gambar/logo.jpg" IsPrintingMode="True"></dxe:ImageEdit>
+                <dxe:TextEdit Grid.Column="1" FontSize="16" FontWeight="Bold" Grid.Row="0" IsPrintingMode="True" EditValue="{Binding Path=Content, Mode=OneWay}"></dxe:TextEdit>
             </Grid>
         </DataTemplate>
     
@@ -35,16 +33,16 @@
     
     <Grid>
 
-        <dxpg:PivotGridControl x:Name="PivotOAnggaran" HorizontalAlignment="Left" VerticalAlignment="Top" Height="450" RowTotalsLocation="Near" ShowColumnGrandTotalHeader="False" ShowColumnTotals="False" ShowRowTotals="False" PrintColumnHeaders="False" PrintDataHeaders="False" PrintLayoutMode="MultiplePagesLayout" OlapConnectionString="{Binding ConnectionString, Source={StaticResource PivotOlapDataSource}}" OlapDataProvider="OleDb" PrintHeadersOnEveryPage="True" PrintFilterHeaders="False" PrintRowHeaders="False" >
+        <dxpg:PivotGridControl x:Name="PivotOAnggaran" HorizontalAlignment="Left" VerticalAlignment="Top" Height="450" RowTotalsLocation="Near" AutoExpandGroups="True" ShowColumnGrandTotalHeader="False" ShowColumnTotals="False" ShowRowTotals="False" PrintColumnHeaders="False" PrintDataHeaders="False" PrintLayoutMode="MultiplePagesLayout" OlapConnectionString="{Binding ConnectionString, Source={StaticResource PivotOlapDataSource}}" OlapDataProvider="OleDb" PrintHeadersOnEveryPage="True" PrintFilterHeaders="False" PrintRowHeaders="False" >
             <dxpg:PivotGridControl.Fields>
-                <dxpg:PivotGridField Area="DataArea" Caption="Nilai Pembiayaan" FieldName="[Measures].[Fang Nilai]"/>
+                <dxpg:PivotGridField Area="DataArea" Caption="Nilai Pembiayaan" FieldName="[Measures].[Fang Nilai]" CellFormat="Rp. {0:n2}"/>
                 <dxpg:PivotGridField Area="ColumnArea" Caption="Tahun" FieldName="[Dim Waktu].[Wkt Detail].[Wkt Detail]"/>
                 <dxpg:PivotGridField Area="RowArea" Caption="Kode Bidang" FieldName="[Dim Bidang].[Bid Kd Bidang].[Bid Kd Bidang]"/>
                 <dxpg:PivotGridField Area="RowArea" Caption="Kode Unit" FieldName="[Dim Pendapatan].[Pend Kd Unit].[Pend Kd Unit]"/>
                 <dxpg:PivotGridField Area="RowArea" Caption="Keterangan" FieldName="[Dim Pembiayaan].[Pemb Keterangan].[Pemb Keterangan]"/>
-                <dxpg:PivotGridField Area="DataArea" Caption="Total Pembiayaan" FieldName="[Measures].[Fang Pemb Total]"/>
-                <dxpg:PivotGridField Area="DataArea" Caption="Nilai Pendapatan" FieldName="[Measures].[Fang Pend Nilai]"/>
-                <dxpg:PivotGridField Area="DataArea" Caption="Total Pendapatan" FieldName="[Measures].[Fang Pend Total]"/>
+                <dxpg:PivotGridField Area="DataArea" Caption="Total Pembiayaan" FieldName="[Measures].[Fang Pemb Total]" CellFormat="Rp. {0:n2}"/>
+                <dxpg:PivotGridField Area="DataArea" Caption="Nilai Pendapatan" FieldName="[Measures].[Fang Pend Nilai]" CellFormat="Rp. {0:n2}"/>
+                <dxpg:PivotGridField Area="DataArea" Caption="Total Pendapatan" FieldName="[Measures].[Fang Pend Total]" CellFormat="Rp. {0:n2}"/>
             </dxpg:PivotGridControl.Fields>
         </dxpg:PivotGridControl>
         <Button Content="Simpan Analisis" HorizontalAlignment="Left" Height="29" Margin="0,455,0,-184" VerticalAlignment="Top" Width="134" Click="Button_Click"/>

@@ -29,6 +29,8 @@ namespace BAPPEDADW.Analisis
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             PrintableControlLink cetak = new PrintableControlLink(PivotOIndikator);
+            cetak.PageHeaderTemplate = (DataTemplate)TryFindResource("print_header");
+            cetak.PageHeaderData = "BADAN PERENCANAAN PEMBANGUNAN DAERAH KABUPATEN BUNGO\n                            LAPORAN INDIKATOR KEGIATAN"; 
             cetak.PaperKind = System.Drawing.Printing.PaperKind.A4;
             cetak.Landscape = true;
             var win = Window.GetWindow(this);

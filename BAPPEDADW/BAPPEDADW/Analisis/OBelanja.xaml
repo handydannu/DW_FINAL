@@ -16,15 +16,30 @@
                 <dx:DesignDataSettings RowCount="5"/>
             </dx:DesignDataManager.DesignData>
         </dx:PivotOlapDataSource>
-    </UserControl.Resources>
+
+        <DataTemplate x:Key="print_header">
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="200"></ColumnDefinition>
+                    <ColumnDefinition Width="600"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <dxe:ImageEdit  Grid.Column="0" Height="100" Width="150" Source="../Gambar/logo.jpg" IsPrintingMode="True"></dxe:ImageEdit>
+                <dxe:TextEdit Grid.Column="1" FontSize="16" FontWeight="Bold" Grid.Row="0" IsPrintingMode="True" EditValue="{Binding Path=Content, Mode=OneWay}"></dxe:TextEdit>
+            </Grid>
+        </DataTemplate>
+        
+    </UserControl.Resources>  
+    
     <Grid>
-        <dxpg:PivotGridControl Name="PivotOBelanja"  HorizontalAlignment="Left" VerticalAlignment="Top" Height="450" OlapConnectionString="{Binding ConnectionString, Source={StaticResource PivotOlapDataSource}}" OlapDataProvider="OleDb" CellSelectedBackground="#FF59B050" PrintFilterHeaders="False" PrintLayoutMode="MultiplePagesLayout" RowTotalsLocation="Near" PrintHeadersOnEveryPage="True" PrintColumnHeaders="False" PrintDataHeaders="False" ShowColumnTotals="False" ColumnTotalsLocation="Near" ShowColumnGrandTotalHeader="False" ShowColumnGrandTotals="False" ShowRowTotals="False">
+        <dxpg:PivotGridControl Name="PivotOBelanja" AutoExpandGroups="True" HorizontalAlignment="Left" VerticalAlignment="Top" Height="450" OlapConnectionString="{Binding ConnectionString, Source={StaticResource PivotOlapDataSource}}" OlapDataProvider="OleDb" CellSelectedBackground="#FF59B050" PrintFilterHeaders="False" PrintLayoutMode="MultiplePagesLayout" RowTotalsLocation="Near" PrintHeadersOnEveryPage="True" PrintColumnHeaders="False" PrintDataHeaders="False" ShowColumnTotals="False" ColumnTotalsLocation="Near" ShowColumnGrandTotalHeader="False" ShowColumnGrandTotals="False" ShowRowTotals="False">
             <dxpg:PivotGridControl.Fields>
-                <dxpg:PivotGridField Area="DataArea" Caption="Nilai Belanja" FieldName="[Measures].[Fbel Nilai]"/>
+                <dxpg:PivotGridField Area="DataArea" Caption="Nilai Belanja" FieldName="[Measures].[Fbel Nilai]" CellFormat="Rp. {0:n2}"/>
                 <dxpg:PivotGridField Area="ColumnArea" Caption="Tahun" FieldName="[Dim Waktu].[Wkt Detail].[Wkt Detail]"/>
                 <dxpg:PivotGridField Area="RowArea" Caption="Kode Bidang" FieldName="[Dim Belanja].[Bel Kd Bidang].[Bel Kd Bidang]"/>
-                <dxpg:PivotGridField Area="DataArea" Caption="Satuan" FieldName="[Measures].[Fbel Satuan]"/>
-                <dxpg:PivotGridField Area="DataArea" Caption="Total" FieldName="[Measures].[Fbel Total]"/>
+                <dxpg:PivotGridField Area="DataArea" Caption="Satuan" FieldName="[Measures].[Fbel Satuan]" CellFormat="Rp. {0:n2}"/>
+                <dxpg:PivotGridField Area="DataArea" Caption="Total" FieldName="[Measures].[Fbel Total]" CellFormat="Rp. {0:n2}"/>
                 <dxpg:PivotGridField Area="RowArea" Caption="Kode Kegiatan" FieldName="[Dim Kegiatan].[Keg Kd Keg].[Keg Kd Keg]"/>
                 <dxpg:PivotGridField Area="RowArea" Caption="Kode Program" FieldName="[Dim Belanja].[Bel Kd Prog].[Bel Kd Prog]"/>
                 <dxpg:PivotGridField Area="RowArea" Caption="Uraian" FieldName="[Dim Kegiatan].[Keg Uraian].[Keg Uraian]"/>

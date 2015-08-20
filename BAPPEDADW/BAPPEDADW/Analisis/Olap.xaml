@@ -10,15 +10,16 @@
     <Grid Style="{StaticResource ContentRoot}">
         <mui:ModernTab Layout="List">
             <mui:ModernTab.Links>
-                <mui:Link DisplayName="OLAP ANGGARAN" Source="/Analisis/OMoney.xaml"  />
-                <mui:Link DisplayName="OLAP BELANJA" Source="/Analisis/OBelanja.xaml"  />
-                <mui:Link DisplayName="OLAP PEMBIAYAAN DAN PENDAPATAN" Source="/Analisis/OAnggaran.xaml"  />
-                <mui:Link DisplayName="OLAP CAPAIAN" Source="/Analisis/OCapaian.xaml"  />
-                <mui:Link DisplayName="OLAP INDIKATOR" Source="/Analisis/OIndikator.xaml"  />
-                <mui:Link DisplayName="OLAP PROGRAM DAN KEGIATAN" Source="/Analisis/OPK.xaml"  />
-                <mui:Link DisplayName="OLAP KERJASAMA" Source="/Analisis/OKerjasama.xaml"  />
-                <mui:Link DisplayName="OLAP PAJAK" Source="/Analisis/OPajak.xaml"  />
-                <mui:Link DisplayName="OLAP PERANGKAT" Source="/Analisis/OPerangkat.xaml"  />
+                <mui:Link DisplayName="ANGGARAN OTONOMI" Source="/Analisis/OMoney.xaml"  />
+                <mui:Link DisplayName="ANGGARAN BELANJA" Source="/Analisis/OBelanja.xaml"  />
+                <mui:Link DisplayName="PEMBIAYAAN DAN PENDAPATAN" Source="/Analisis/OAnggaran.xaml"  />
+                <mui:Link DisplayName="ANGGARAN UTAMA" Source="/Analisis/OUtama.xaml"  />
+                <mui:Link DisplayName= "HASIL CAPAIAN" Source="/Analisis/OCapaian.xaml"  />
+                <mui:Link DisplayName="NILAI INDIKATOR" Source="/Analisis/OIndikator.xaml"  />
+                <mui:Link DisplayName="ANGGARAN PROGRAM DAN KEGIATAN" Source="/Analisis/OPK.xaml"  />
+                <mui:Link DisplayName="ANGGARAN KERJASAMA" Source="/Analisis/OKerjasama.xaml"  />
+                <mui:Link DisplayName="ANGGARAN PAJAK" Source="/Analisis/OPajak.xaml"  />
+                <mui:Link DisplayName="ANGGARAN DINAS" Source="/Analisis/OPerangkat.xaml"  />
             </mui:ModernTab.Links>
         </mui:ModernTab>
     </Grid>

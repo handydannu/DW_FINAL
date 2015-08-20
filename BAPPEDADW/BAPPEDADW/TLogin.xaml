@@ -16,7 +16,7 @@
             <StackPanel>
                 <Label Padding="10" Content="DATA WAREHOUSE" FontWeight="Bold" FontSize="20" HorizontalAlignment="Center" Canvas.Left="-128" Canvas.Top="70"/>
                 <Label Padding="10" Content="BADAN PERENCANAAN PEMBANGUNAN DAERAH" HorizontalContentAlignment="Center" VerticalAlignment="Center" VerticalContentAlignment="Center" FontSize="15" FontWeight="Bold" Canvas.Left="-42" Canvas.Top="26"/>
-                <Image Source="/Gambar/logo.jpg" Height="100" Width="100"/>
+                <Image Height="100" Width="100"/>
                 <Label Padding="10" HorizontalContentAlignment="Center" Content="USERNAME" HorizontalAlignment="Center" FontSize="15"/>
                 <TextBox TextWrapping="Wrap" Name="Tbusername"  Height="23" Width="200" />
                 <Label Padding="10" Content="PASSWORD" FontSize="15" HorizontalContentAlignment="Center" HorizontalAlignment="Center"/>

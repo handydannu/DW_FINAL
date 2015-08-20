@@ -15,12 +15,25 @@
                 <dx:DesignDataSettings RowCount="5"/>
             </dx:DesignDataManager.DesignData>
         </dx:PivotOlapDataSource>
+        <DataTemplate x:Key="print_header">
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="200"></ColumnDefinition>
+                    <ColumnDefinition Width="600"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <dxe:ImageEdit  Grid.Column="0" Height="100" Width="150" Source="../Gambar/logo.jpg" IsPrintingMode="True"></dxe:ImageEdit>
+                <dxe:TextEdit Grid.Column="1" FontSize="16" FontWeight="Bold" Grid.Row="0" IsPrintingMode="True" EditValue="{Binding Path=Content, Mode=OneWay}"></dxe:TextEdit>
+            </Grid>
+        </DataTemplate>
+
     </UserControl.Resources>
     <Grid>
 
-        <dxpg:PivotGridControl Name="PivotOCapaian" HorizontalAlignment="Left" VerticalAlignment="Top" Height="450" OlapConnectionString="{Binding ConnectionString, Source={StaticResource PivotOlapDataSource}}" OlapDataProvider="OleDb" PrintLayoutMode="MultiplePagesLayout" PrintHeadersOnEveryPage="True" RowTotalsLocation="Near" PrintColumnHeaders="False" PrintDataHeaders="False" ShowRowGrandTotalHeader="False" ShowColumnGrandTotalHeader="False" ShowColumnGrandTotals="False" ShowColumnTotals="False" ShowGrandTotalsForSingleValues="True" ShowRowTotals="False">
+        <dxpg:PivotGridControl Name="PivotOCapaian" AutoExpandGroups="True" HorizontalAlignment="Left" VerticalAlignment="Top" Height="450" OlapConnectionString="{Binding ConnectionString, Source={StaticResource PivotOlapDataSource}}" OlapDataProvider="OleDb" PrintLayoutMode="MultiplePagesLayout" PrintHeadersOnEveryPage="True" RowTotalsLocation="Near" PrintColumnHeaders="False" PrintDataHeaders="False" ShowRowGrandTotalHeader="False" ShowColumnGrandTotalHeader="False" ShowColumnGrandTotals="False" ShowColumnTotals="False" ShowGrandTotalsForSingleValues="True" ShowRowTotals="False">
             <dxpg:PivotGridControl.Fields>
-                <dxpg:PivotGridField Area="DataArea" Caption="Target Capaian" FieldName="[Measures].[Fcap Target]"/>
+                <dxpg:PivotGridField Area="DataArea" Caption="Target Capaian" FieldName="[Measures].[Fcap Target]" CellFormat="Rp. {0:n2}"/>
                 <dxpg:PivotGridField Area="ColumnArea" Caption="Tahun" FieldName="[Dim Waktu].[Wkt Detail].[Wkt Detail]"/>
                 <dxpg:PivotGridField Area="RowArea" Caption="Kode Bidang" FieldName="[Dim Capaian].[Cap Kd Bidang].[Cap Kd Bidang]"/>
                 <dxpg:PivotGridField Area="RowArea" Caption="Kode Program" FieldName="[Dim Capaian].[Cap Kd Prog].[Cap Kd Prog]"/>
